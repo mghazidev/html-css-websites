@@ -1,0 +1,275 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #252526;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.logo img{
+    width: 60px;
+    cursor: pointer;
+   
+}
+
+.nav-area {
+    display: flex;
+    align-items: center;
+}
+
+.nav-area ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+.nav-area ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-area ul li a:hover {
+    color: lightgrey;
+    transition: 0.1s ease-in;
+}
+
+header-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pexels-nmq-936194.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-heading {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 65px;
+    width: fit-content;
+    color: #fff;
+    font-weight: 400;
+    background-color: rgba(15,15,15,0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.content p {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+button {
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    border: 0;
+    white-space: nowrap;
+}
+
+.btn {
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #eba800;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #252526;
+    transition: 0.5s ease-in;
+}
+
+section {
+    background-color: #252526;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.col-1 {
+    flex-basis: 30%;
+    margin: 50px auto;
+    display: flex;
+    padding: 20px;
+}
+
+.col-1 .fa-solid {
+    color: #eba800;
+    display: flex;
+    cursor: pointer;
+}
+
+.row-1 h1 {
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    white-space: wrap; 
+}
+
+.row-1 h1:hover {
+    color: lightgrey;
+}
+
+.row-1 p {
+    cursor: pointer;
+    white-space: wrap;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.row-1 p:hover {
+    color: lightgrey;
+}
+
+.sec-1 {
+    background-color: #fff;
+}
+
+.container-1 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.main h1 {
+    font-weight: 500;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.main p {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: wrap;
+}
+
+.btn-plan {
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #eba800;
+    margin: auto;
+    color: #fff;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-plan:hover {
+    background-color: #252526;
+    transition: 0.5s ease-in;
+}
+
+.sec-2 {
+    background-color: #eba800;
+}
+
+.column-2{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
+
+.col-2 {
+    flex-basis: 32%;
+    background-size: cover;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.col-2 img{
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.col-2 h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.col-2 h3:hover {
+    color: lightgrey;
+}
+
+.col-2 p {
+    font-size: 12px;
+    margin: 10px auto;
+    color: black;
+    cursor: pointer;
+}
+
+.col-2 p:hover {
+    color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
