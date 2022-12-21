@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    background-color: #252526;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 70px;
+    background-size: cover;
+
+}
+
+.logo h1 {
+    color: rgba(200,120,80,50);
+    margin: 0 20px;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.menu {
+    
+    margin-left: 0;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.menu ul {
+    display: flex;
+    column-gap: 30px;
+    list-style-type:none;
+    margin-top: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: rgba(200,120,80,50);
+}
+
+.menu ul li.active a {
+    color: rgba(200,120,80,50);
+}
+
+.menu ul li.active a:hover {
+    color: #fff;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+header-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pexels-vladyslav-dukhin-296649.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+section h1 {
+    font-size: 50px;
+}
+
+
+.slider {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+
+figure {
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: 30px;
+    background-image: url(../images/pexels-jimmy-liao-12069841.jpg);
+    animation: 10s slider infinite ;
+}
+
+@keyframes slider {
+    0% {
+        
+        background-image: url(../images/pexels-vladyslav-dukhin-296649.jpg);
+    }
+    50%{ 
+        background-image :url(../images/pexels-josh-hild-14557817.jpg);
+    }
+    100% { 
+        background-image :url(../images/pexels-vladyslav-dukhin-296649.jpg);}
+    }
+
+.main-heading {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 100px;
+    width: fit-content;
+    color: #fff;
+    font-weight: 400;
+    background-color: rgba(15,15,15,0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
