@@ -5,7 +5,7 @@ I'm a student of class 12 and working as an intern, learning some languages.
 
 ## _\* So Here are the links of some one page websites and practice code._
 
-- [One Page using Html CSS.](https://github.com/mghazidev/html-css-websites/tree/main/grid-flex-layout-prac)
+- [One Page website using Html CSS.](https://github.com/mghazidev/html-css-websites/tree/main/grid-flex-layout-prac)
 
 - [Website using html and css grid and flexbox.](https://github.com/mghazidev/html-css-websites/tree/main/website2)
 
