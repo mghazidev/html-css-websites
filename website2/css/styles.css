@@ -3,7 +3,38 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+
 }
+
+/* Image style */
+#scrollUp {
+    background-image: url("../images/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+
+
+/* #scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+} */
+
+.content {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s ; /* don't forget to set a duration! */
+}
+
+.nav-area {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s ; /* don't forget to set a duration! */
+}
+
+
 
 .nav-bar {
     width: 100%;
