@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Tailwind-Website</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 cursor-pointer mb-4 md:mb-0">
+            <img src="images/LogoMakr-90oGpL.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            
+            <span class="ml-3 text-3xl font-bold">LEAR</span><span class="ml-0 text-3xl font-bold text-red-900">ND</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
+            <a class="mr-10 hover:text-gray-900 text-xl cursor-pointer font-medium text-red-900 underline underline-offset-4 hover:animate-bounce">HOME</a>
+            <a class="mr-10 hover:text-gray-900 text-xl cursor-pointer font-medium dark:md:hover:underline underline-offset-4 hover:animate-bounce hover:text-red-900">ABOUT</a>
+            <a class="mr-10 hover:text-gray-900 text-xl cursor-pointer font-medium dark:md:hover:underline underline-offset-4 hover:animate-bounce hover:text-red-900">CONTACTS</a>
+            <a class="mr-10 hover:text-gray-900 text-xl cursor-pointer font-medium dark:md:hover:underline underline-offset-4 hover:animate-bounce hover:text-red-900">PRICES</a>
+            <a class="mr-10 hover:text-gray-900 text-xl cursor-pointer font-medium dark:md:hover:underline underline-offset-4 hover:animate-bounce hover:text-red-900">REVIEWS</a>
+          </nav>
+          <button class="inline-flex items-center cursor-pointer border-2 p-5 mr-5 font-bold rounded-full focus:outline-none hover:text-red-900 hover:bg-gray-200 text-base mt-4 md:mt-0">LOGIN
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </button>
+          <button class="inline-flex items-center cursor-pointer border-2 p-5 font-bold rounded-full focus:outline-none hover:bg-gray-200 hover:text-red-900 text-base mt-4 md:mt-0">SIGN UP
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </button>
+        </div>
+      </header>
+      <section class="border-2 h-screen items-center flex body-font bg-cover" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/pexels-eberhard-grossgasteiger-691668.jpg')">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col  items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col  md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <p class=" font-medium">Chillwave portland ugh.</p>
+            <h1 class="title-font sm:text-6xl text-3xl mb-4 font-medium text-white">Learn New Language<br> And <span class="underline underline-offset-4 text-red-900">Upgrade</span> Your Skills</h1>
+            <p class="mb-8 leading-relaxed text-white font-normal">Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag typewriter affogato, hella<br> selvage wolf narwhal dreamcatcher.</p>
+            <div class="flex w-full md:justify-start justify-center items-end">
+              <div class="relative  md:w-full lg:w-full xl:w-1/2 w-2/4">
+                <label for="hero-field" class="leading-7 text-sm text-gray-600"></label>
+                <input type="text" placeholder="Learnd@gmail.com " id="hero-field" name="hero-field" class=" w-full bg-gray-100 rounded-full border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-white py-1 px-3  leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button class="inline-flex text-white bg-indigo-500 rounded-full border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 text-lg">Search</button>
+            </div>
+            
+            <!--  -->
+          </div>
+          <div class="h-auto lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+            <img class="object-cover object-center rounded" alt="hero" src="images/pexels-erik-mclean-4061662.jpg">
+          </div>
+        </div>
+      </section>
+    
+      <section class="text-gray-600 body-font ">
+        <div class="container px-5 py-14 mx-auto ">
+            <div class="container px-5  mx-auto flex items-center md:flex-row flex-col">
+                <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center items-base">
+                  <h2 class="text-s text-red-900 tracking-widest font-medium title-font mb-1">CLASSES</h2>
+                  <h1 class="md:text-3xl text-2xl font-bold title-font text-gray-900">Most Popular Classes</h1>
+                  <p class="mb-8 py-2 leading-relaxed font-normal items-center">Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag typewriter affogato, hella</p>
+                </div>
+                <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4 ">              
+                  <button class="inline-flex items-center cursor-pointer border-2 p-4 px-12 text-red-900 font-bold rounded-full focus:outline-none hover:text-black hover:bg-gray-200 text-base mt-4 md:mt-0">SEE ALL
+                      <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg> -->
+                    </button>       
+                </div>
+              </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-none cursor-pointer">
+                <img class="h-64 rounded-lg w-full object-cover object-center mb-6 bg-center" src="images/pexels-antoni-shkraba-4348404.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 bg-cover text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-none cursor-pointer">
+                <img class="h-64 rounded-lg w-full object-cover object-center mb-6 bg-center" src="images/pexels-erik-mclean-4061662.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-none cursor-pointer">
+                <img class="h-64 rounded-lg w-full object-cover object-center mb-6 bg-center h-64" src="images/pexels-karolina-grabowska-4022602.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-none cursor-pointer">
+                <img class="h-64 rounded-lg w-full object-cover object-center bg-center mb-6" src="images/pexels-eberhard-grossgasteiger-691668.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <img alt="feature" class="object-cover object-center h-full w-full" src="images/pexels-erik-mclean-4061662.jpg">
+          </div>
+          <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div class="flex flex-col mb-10 lg:items-start items-center">
+                <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center  items-base">
+                    <h2 class="text-s text-red-900 tracking-widest font-medium title-font mb-1">QUESTIONS</h2>
+                    <h1 class="md:text-3xl text-2xl font-bold title-font text-gray-900">What Do We Provide</h1>
+                    <p class="mb-8 py-2 leading-relaxed font-normal items-center">Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag typewriter affogato, hella</p>
+                </div>
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex items-center shadow-md hover:shadow-none border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                      </div>
+                      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="flex items-center shadow-md hover:shadow-none border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                        <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+                          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center shadow-md hover:shadow-none border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      </div>
+                      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
+                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font overflow-hidden">
+        
+        <div class=" container px-5 py-10 mx-auto">
+            <h1 class="md:text-3xl mb-2 text-2xl text-left font-bold title-font text-gray-900">Different Subscription Plans!</h1>
+            <p class="mb-20  leading-relaxed font-normal items-center">Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag typewriter affogato, hella<br>Man braid swag typewriter affogato</p>  
+          <div class="flex flex-wrap -m-4 justify-center">
+            
+            <div class="p-10 xl:w-1/4 md:w-1/2 w-full">
+                <div class="h-full p-10 hover:scale-125 hover:z-5 hover:relative rounded-lg flex flex-col relative overflow-hidden">
+                    <h2 class="text-3xl tracking-widest title-font mb-1 text-black  font-bold text-center">Standard User</h2>
+                    <h1 class="text-5xl text-gray-900 justify-center font-bold  leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                      <span>$18</span>
+                      <span class="text-lg ml-1 font-bold  ">/month</span>
+                    </h1>
+                    <p class="flex items-center  mb-2 px-10">
+                      <span class="w-6 h-6 mr-2 inline-flex items-center justify-center text-grey rounded-full flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                          <path d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                      </span>Vexillologist pitchfork
+                    </p>
+                    <p class="flex items-center  mb-2 px-10">
+                      <span class="w-6 h-6 mr-2 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                          <path d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                      </span>Tumeric plaid portland
+                    </p>
+                    <p class="flex items-center mb-2 px-10">
+                        <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  rounded-full flex-shrink-0">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17l-5-5"></path>
+                          </svg>
+                        </span>Vexillologist pitchfork
+                    </p>
+                    <p class="flex items-center  mb-2 px-10">
+                      <span class="w-6 h-6 mr-2 inline-flex items-center justify-center   rounded-full flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                          <path d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                      </span>Hexagon neutra unicorn
+                    </p>
+                    <p class="flex items-center  mb-2 px-10">
+                        <span class="w-6 h-6 mr-2 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17l-5-5"></path>
+                          </svg>
+                        </span>Hexagon neutra unicorn
+                    </p>
+                    <p class="flex items-center  mb-2 px-10">
+                        <span class="w-6 h-6 mr-2 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17l-5-5"></path>
+                          </svg>
+                        </span>Hexagon neutra unicorn
+                      </p>
+                      <p class="flex items-center  mb-2 px-10">
+                        <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  rounded-full flex-shrink-0">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17l-5-5"></path>
+                          </svg>
+                        </span>Hexagon neutra unicorn
+                      </p>
+                    <p class="flex items-center  mb-2 px-10">
+                      <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  rounded-full flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                          <path d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                      </span>Mixtape chillwave tumeric
+                    </p>
+                    
+                    <button class="flex items-center border-2 text-xl justify-center mt-auto text-white bg-red-400 font-bold py-4 px-4 w-full hover:block focus:outline-none hover:bg-red-600 rounded-full">Button
+                    </button>
+                  </div>
+            </div>
+            <div class="p-10 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-10 scale-125 hover:scale-110 hover:z-5 bg-red-500 rounded-3xl border-2 flex flex-col relative overflow-hidden">
+                <h2 class="text-3xl tracking-widest title-font mb-1 text-white font-bold text-center">Premium User</h2>
+                <h1 class="text-5xl text-gray-900 justify-center font-bold text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                  <span>$38</span>
+                  <span class="text-lg ml-1 font-bold text-white ">/month</span>
+                </h1>
+                <p class="flex items-center text-white mb-2 px-10">
+                  <span class="w-6 h-6 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-white mb-2 px-10">
+                  <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Tumeric plaid portland
+                </p>
+                <p class="flex items-center text-white mb-2 px-10">
+                    <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Vexillologist pitchfork
+                </p>
+                <p class="flex items-center text-white mb-2 px-10">
+                  <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Hexagon neutra unicorn
+                </p>
+                <p class="flex items-center text-white mb-2 px-10">
+                    <span class="w-6 h-6 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                </p>
+                <p class="flex items-center text-white mb-2 px-10">
+                    <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                  <p class="flex items-center text-white mb-2 px-10">
+                    <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  text-white rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Hexagon neutra unicorn
+                  </p>
+                <p class="flex items-center text-white mb-2 px-10">
+                  <span class="w-6 h-6 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Mixtape chillwave tumeric
+                </p>
+                
+                <button class="flex items-center border-2 text-xl justify-center mt-auto text-white bg-red-400 font-bold py-4 px-4 w-full focus:outline-none hover:bg-red-600 rounded-full">Button
+                </button>
+              </div>
+            </div>
+            <div class="p-10 xl:w-1/4 md:w-1/2 w-full ">
+                <!-- <div class="p-4 xl:w-1/4 md:w-1/2 w-full"> -->
+                    <div class="h-full p-10  hover:scale-125  hover:z-5 hover:relative rounded-lg flex flex-col relative overflow-hidden">
+                        <h2 class="text-3xl tracking-widest title-font mb-1 text-black  font-bold text-center">Special User</h2>
+                        <h1 class="text-5xl text-gray-900 justify-center font-bold  leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                          <span>$58</span>
+                          <span class="text-lg ml-1 font-bold  ">/month</span>
+                        </h1>
+                        <p class="flex items-center  mb-2 px-10">
+                          <span class="w-6 h-6 mr-2 inline-flex items-center justify-center text-grey rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Vexillologist pitchfork
+                        </p>
+                        <p class="flex items-center  mb-2 px-10">
+                          <span class="w-6 h-6 mr-2 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Tumeric plaid portland
+                        </p>
+                        <p class="flex items-center mb-2 px-10">
+                            <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  rounded-full flex-shrink-0">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"></path>
+                              </svg>
+                            </span>Vexillologist pitchfork
+                        </p>
+                        <p class="flex items-center  mb-2 px-10">
+                          <span class="w-6 h-6 mr-2 inline-flex items-center justify-center   rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Hexagon neutra unicorn
+                        </p>
+                        <p class="flex items-center  mb-2 px-10">
+                            <span class="w-6 h-6 mr-2 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"></path>
+                              </svg>
+                            </span>Hexagon neutra unicorn
+                        </p>
+                        <p class="flex items-center  mb-2 px-10">
+                            <span class="w-6 h-6 mr-2 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"></path>
+                              </svg>
+                            </span>Hexagon neutra unicorn
+                          </p>
+                          <p class="flex items-center  mb-2 px-10">
+                            <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  rounded-full flex-shrink-0">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"></path>
+                              </svg>
+                            </span>Hexagon neutra unicorn
+                          </p>
+                        <p class="flex items-center  mb-2 px-10">
+                          <span class="w-6 h-6 mr-2 inline-flex items-center justify-center  rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Mixtape chillwave tumeric
+                        </p>
+                        
+                        <button class="flex items-center border-2 text-xl justify-center mt-auto text-white bg-red-400 font-bold py-4 px-4 w-full hover:block focus:outline-none hover:bg-red-600 rounded-full">Button
+                        </button>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-4xl ml-0 font-medium title-font mb-4 font-bold text-gray-900 tracking-widest">Explore About US</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap -m-4 justify-center">
+            <div class="p-4 lg:w-1/4 mx-auto">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="images/pexels-antoni-shkraba-4348404.jpg">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500 hover:text-blue-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500 hover:text-blue-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500 hover:text-blue-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="p-4 lg:w-1/4 mx-auto">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="images/pexels-eberhard-grossgasteiger-691668.jpg">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500 hover:text-blue-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500 hover:text-blue-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500 hover:text-blue-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 mx-auto">
+                <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="images/pexels-erik-mclean-4061662.jpg">
+                  <div class="flex-grow sm:pl-8">
+                    <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                    <h3 class="text-gray-500 mb-3">Designer</h3>
+                    <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                    <span class="inline-flex">
+                      <a class="text-gray-500 hover:text-blue-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-2 text-gray-500 hover:text-blue-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-2 text-gray-500 hover:text-blue-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-600 body-font ">
+        <div class="container p-20 mx-auto bg-red-500 rounded-lg justify-center flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="images/LogoMakr-90oGpL.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              <span class="ml-3 text-2xl font-bold text-white">LEARND</span>
+            </a>
+            <p class="mt-2 text-sm text-white">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ABOUT US</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-black">Home</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Services</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Donations</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">News</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-black">Articles</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-black">Contacts</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-black">Charitable</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-black">FAQ</a>
+                </li>
+              </nav>
+            </div>
+            
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ABOUT US</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white hover:text-black">Home</a>
+                    </li>
+                    <li>
+                      <a class="text-white hover:text-black">Services</a>
+                    </li>
+                    <li>
+                      <a class="text-white hover:text-black">Donations</a>
+                    </li>
+                    <li>
+                      <a class="text-white hover:text-black">News</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-black">Articles</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-black">Contacts</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-black">Charitable</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-black">FAQ</a>
+                    </li>
+                  </nav>
+                </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-black">First Link</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-black">First Link</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-black">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Learning platform —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray ml-1" target="_blank">@Github.com</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500 hover:text-blue-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 hover:text-blue-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 hover:text-red-300">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 hover:text-blue-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
