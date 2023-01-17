@@ -662,6 +662,9 @@ td img {
 .schedule {
     grid-column: 6/-1;
     padding: 10px;
+    background-color: #fff;
+    border-radius: 25px 0 0 25px;
+    margin-left: 10px;
 }
 
 .schedule h1 {
@@ -679,6 +682,7 @@ td img {
    align-items: baseline;
    justify-content: space-between;
    line-height: 0;
+   
 }
 
 .field h2 i {
@@ -689,9 +693,11 @@ td img {
 .field span i {
     font-size: 20px;
     line-height: 0;
+    
 }
 
 .fields-sec p {
+    
     line-height: 1;
     margin-left: 28px;
 }
