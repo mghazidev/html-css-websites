@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Order</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <section class="body-font h-screen p-5 ">
+        <div class="container flex flex-wrap justify-between ">
+            <i class="fa-solid fa-chevron-left bg-gray-200 rounded-lg mx-auto p-5 ml-0"></i>
+            <i class="fa-solid fa-boxes-stacked p-5 bg-gray-200 text-black rounded-lg ml-3"></i>
+        </div>
+        <div class="slider-sec mt-5">
+            <div class="swiper h-fit ">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide flex justify-center"><img class="rounded-full w-56 bg-cover" src="images/pexels-julie-aagaard-2097090.jpg"></div>
+                  <div class="swiper-slide flex justify-center"><img class="rounded-full w-56 bg-cover" src="images/pexels-iina-luoto-1211887.jpg"></div>
+                  <div class="swiper-slide flex justify-center"><img class="rounded-full w-56 bg-cover" src="images/pexels-jan-n-g-u-y-e-n-🍁-699953.jpg"></div>
+                  ...
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-prev text-black"></div>
+                <div class="swiper-button-next text-black"></div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
+        </div>
+        <div class="flex justify-between items-center mt-10">
+            <h2 class="text-black font-bold text-3xl">Vegetable Salad</h2>
+            <p class=" text-black rounded-full text-orange-600 text-4xl font-bold">$45</p>
+        </div>
+        <div class="flex flex-wrap justify-start mt-5">
+            <button class=" text-black border-2 border-gray-200 py-1 px-2 focus:outline-none hover:text-orange-700 rounded-full text-lg">220 Kol</button>
+            <button class=" text-black border-2 border-gray-200 ml-6 py-1 px-2 focus:outline-none hover:text-orange-700 rounded-full text-lg">170 comm</button>
+            <button class=" text-black border-2 border-gray-200 ml-6 py-1 px-2 focus:outline-none hover:text-orange-700 rounded-full text-lg"><i class="fa-solid fa-star text-orange-600"></i>4.5</button>
+        </div>
+        <div class="flex justify-between items-center mt-5">
+            <h2 class="text-black font-bold text-3xl">Others</h2>
+            <button class=" text-black border-0 focus:outline-none hover:text-orange-700 rounded-full text-lg">View All</button>
+        </div>
+        <div class="lists flex flex-wrap justify-between">
+            <div class="items mt-5 ">
+                <i class="fa-solid fa-lemon text-7xl w-fit px-6 py-6 text-green-500 bg-orange-100 rounded-2xl"></i> 
+                <p class="text-center mt-3 font-bold text-black">Lemon</p>
+                <p class=" text-black text-center py-2 bg-orange-100 rounded-full text-4l font-bold mt-5">$45</p>
+            </div>
+            <div class="items mt-5">
+                <i class="fa-solid fa-apple-whole text-7xl w-fit bg-blue-100 px-6 py-6 text-red-600  border-2 border-gray-200 rounded-2xl"></i> 
+                <p class="text-center mt-3 font-bold text-black">Apple</p>
+                <p class=" text-black text-center py-2 bg-blue-100 rounded-full text-4l font-bold mt-5">$48</p>
+            </div>
+            <div class="items mt-5">
+                <i class="fa-solid fa-carrot text-7xl w-fit px-6 py-6 bg-green-100 text-red-500 border-2 border-gray-200 rounded-2xl"></i> 
+                <p class="text-center mt-3 font-bold text-black">Carrot</p>
+                <p class=" text-black text-center py-2 bg-green-100 rounded-full text-4l font-bold mt-5">$50</p>
+            </div>
+        </div>
+    
+        <div class="footer flex justify-center">
+            <div class=" fixed bottom-0 flex flex-wrap justify-between items-center p-2 rounded-full w-full bg-black mt-auto ">
+                <button class="text-black font-bold bg-white py-4 px-8 border-0 focus:outline-none hover:text-orange-700 rounded-full text-lg">$70</button>
+                <p class="text-center font-bold text-white text-2xl">Add to Cart</p>
+                <button class="text-black bg-white py-4 px-8 border-0 focus:outline-none hover:text-orange-700 rounded-full text-lg">$70</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+});
+    </script>
+</body>
+
+</html>
