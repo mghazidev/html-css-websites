@@ -6,4 +6,4 @@
 - Different Sections
 - db section.
 
-![](/images/Dashboard.png)
+![N](/images/Dashboard.png)
