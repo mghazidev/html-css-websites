@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sora:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>Featured</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+font-family: 'Sora', sans-serif;
+    }
+    </style>
 </head>
 <body>
+    
     <section class="body-font h-screen p-5">
         <div class="container flex flex-wrap  ">
-            <i class="fa-solid fa-chevron-left bg-gray-200 rounded-lg mx-auto p-5 ml-0"></i>
+          <a class="bg-gray-200 rounded-lg mx-auto p-5 px-6 ml-0" href="http://127.0.0.1:5500/index.html">  <i class="fa-solid fa-chevron-left "></i></a>
             <div class="icons flex justify-">
-                <i class="fa-solid fa-magnifying-glass p-5 bg-gray-200 rounded-lg"></i>
-                <i class="fa-solid fa-boxes-stacked p-5 bg-orange-600 text-white rounded-lg ml-3"></i>
+            <a class="p-5 bg-gray-200 rounded-lg" href="http://127.0.0.1:5500/menu.html">    <i class="fa-solid fa-magnifying-glass "></i></a>
+            <a class="p-5 bg-orange-600 text-white rounded-lg ml-3" href="#"><i class="fa-solid fa-boxes-stacked "></i></a>
             </div>
         </div>
         <h1 class="flex flex-wrap text-5xl mt-5 font-medium">Featured</h1>
         <div class="flex justify-between mt-5">
             <p class="text-gray-500 font-medium">Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit.</p>
-            <button class=" text-white bg-black border-0 py-3 px-6 focus:outline-none hover:bg-orange-700 rounded-full text-lg">View All</button>
+          <a href="http://127.0.0.1:5500/menu.html">  <button class=" text-white bg-black border-0 py-3 px-6 focus:outline-none hover:bg-orange-700 rounded-full text-lg">View All</button></a>
         </div>
         </div>
         <div class="flex flex-wrap justify-center mt-5">
             <div class="menu flex flex-col justify-start lg:w-2/6 md:w-3/6 w-full mb-10 object-cover bg-cover object-center p-8 rounded-3xl" style="background-image: url(images/Fresh\ herbs\ and\ spices\ on\ black\ stone\ table\ featuring\ herb\,\ condiment\,\ and.jfif);">
                 <h1 class="text-white text-3xl font-medium">Best BBQ</h1>
                 <h2 class="text-white mt-2 text-xl">BBQ</h2>
-                <button class=" text-white w-1/2 bg-orange-600 border-0 py-3 px-6 mt-20 focus:outline-none hover:bg-orange-700 rounded-full text-lg">View All</button>
+                <a href="http://127.0.0.1:5500/menu.html"> <button class=" text-white w-1/2 bg-orange-600 border-0 py-3 px-6 mt-20 focus:outline-none hover:bg-orange-700 rounded-full text-lg">View All</button></a>
             </div> 
         </div>
         <div class="flex justify-between items-center">
