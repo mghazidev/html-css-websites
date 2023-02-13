@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    /* background-color: #333; */
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    width: 90%;
+    margin: auto;
+    align-items: centers;
+  }
+
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+  }
+
+  .logo img{
+    width: 180px;
+    
+  }
+
+  .nav-bar {
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+  }
+  
+  .nav-bar nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-bar nav a {
+    color: #000;
+    display: block;
+    padding: 1em;
+    font-weight: 500;
+    text-decoration: none;
+
+  }
+  
+   .nav-bar nav a:hover {
+    background-color: #666;
+    color: #fff;
+    border-radius: 20px;
+    animation: fadeIn;
+    animation-duration: 1s;
+  }
+
+  /* .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url();
+  } */
+
+  .hero {
+    animation: rubberBand;
+    animation-duration: 2s;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .content h1 {
+    font-size: 45px;
+    color: #333;
+    margin: 50px 0 40px 0;
+  }
+
+  .content p {
+    width: 40%;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: #333;
+  }
+
+  .content h2 {
+    margin: 0 0 50px 0;
+    color: #333;
+  }
+
+  .content span a {
+    color: #777; 
+    cursor: pointer;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-1 {
+    padding: 10px;
+    font-weight: 700;
+    border: 1px solid #333;
+    font-size: 14px;
+    background-color: transparent;
+  }
+
+  .btn-1:hover {
+    background-color: #666;
+    color: #fff;
+    border: none;
+  }
+
+  .btn-1 i {
+    margin-right: 10px;
+  }
+
+  .btn-2 {
+    padding: 10px;
+    font-weight: 700;
+    border: 1px solid #333;
+    font-size: 14px;
+    background-color: transparent;
+  }
+
+  .btn-2:hover {
+    background-color: #666;
+    color: #fff;
+    border: none;
+  }
+
+  .btn-2 i {
+    margin-right: 10px;
+  }
+
+  #about {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #about h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .column {
+    display: flex;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+  }
+
+  .col-1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  .col-1 ul {
+    padding: 20px;
+  }
+
+  .col-1 ul li a {
+    text-decoration: none;
+    color: #333;
+    text-shadow:2px 2px 5px #666;
+  }
+
+  .col-1 ul li {
+    margin-top: 6px;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .col-2 img {
+    width: 70%;
+    box-shadow: 10px 10px #333;
+  }
+
+  #qualifications {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #qualifications h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #333;
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .row-1 {
+    width: 50%;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 2px 4px #333;
+    padding: 10px;
+  }
+
+  .row-1:hover {
+    box-shadow: none;
+    animation: fadeOut;
+    animation-duration: 1s;
+  }
+
+  .school {
+    text-align: center;
+  }
+
+  .school h3 {
+    text-shadow: 2px 2px 5px lightskyblue;
+    font-weight: 900;
+  }
+
+  .school p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .row-2 {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 2px 4px #333;
+    padding: 10px;
+  }
+
+  .row-2:hover {
+    box-shadow: none;
+    animation: fadeOut;
+    animation-duration: 1s;
+  }
+
+  .college {
+    text-align: center;
+  }
+
+  .college h3 {
+    text-shadow: 2px 2px 5px lightskyblue;
+    font-weight: 900;
+  }
+
+  .college p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .row-3 {
+    width: 50%;
+    margin: auto;
+    box-shadow: 2px 3px 2px 4px #333;
+    padding: 10px;
+  }
+
+  .row-3:hover {
+    box-shadow: none;
+    animation: fadeOut;
+    animation-duration: 1s;
+  }
+
+  .internship {
+    text-align: center;
+  }
+
+  .internship h3 {
+    text-shadow: 2px 2px 5px gold;
+    font-weight: 900;
+  }
+
+  .internship p {
+    margin-top: 5px;
+  }
+
+  .progress {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1,170px);
+    margin-top: 100px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    background: #d9d7da;
+    border-radius: 50%;
+  }
+  
+  @media only screen and (max-width: 580px) {
+    .progress {
+        display: inline;
+        justify-content: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* section {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  #slider {
+    background-color: #eee;
+    height: 300px;
+  }
+  
+  #qualifications {
+    background-color: #ddd;
+    height: 300px;
+  }
+  
+  #skills {
+    background-color: #ccc;
+    height: 300px;
+  }
+  
+  #portfolio {
+    background-color: #bbb;
+    height: 300px;
+  }
+  
+  #newsletter {
+    background-color: #aaa;
+    height: 300px;
+  }
+  
+  #contact {
+    background-color: #999;
+    height: 300px;
+  } */
