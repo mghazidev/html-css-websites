@@ -317,21 +317,30 @@ body {
     margin-top: 5px;
   }
 
+  #skills h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #333;
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
   .progress {
+    width: 50%;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
   }
 
   .circle-wrap {
-    display: grid;
-    grid-template-columns: repeat(1,170px);
-    margin-top: 100px;
-    margin-left: 50px;
-    flex-wrap: wrap;
     width: 200px;
     height: 200px;
-    background: #d9d7da;
+    background: #fff;
     border-radius: 50%;
   }
   
@@ -342,6 +351,152 @@ body {
     }
   }
 
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3,
+  .circle-wrap .circle .fill-4,
+  .circle-wrap .circle .fill-5,
+  .circle-wrap .circle .fill-6 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 200px, 200px, 100px);
+  }
+
+  .mask .fill-1 {
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #2F4F4F;
+  }
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 2s;
+    transform: rotate(168deg);
+  }
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(168deg);
+    }
+  }
+
+  .mask .fill-2 {
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #2F4F4F;
+  }
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 2s;
+    transform: rotate(168deg);
+  }
+  @keyframes fill-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(168deg);
+    }
+  }
+
+  .mask .fill-3 {
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #2F4F4F;
+  }
+  .mask.full-3,
+  .circle .fill-3 {
+    animation: fill-3 ease-in-out 2s;
+    transform: rotate(160deg);
+  }
+  @keyframes fill-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(160deg);
+    }
+  }
+
+  .mask .fill-4 {
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #2F4F4F;
+  }
+  .mask.full-4,
+  .circle .fill-4 {
+    animation: fill-4 ease-in-out 2s;
+    transform: rotate(90deg);
+  }
+  @keyframes fill-4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  .mask .fill-5 {
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #2F4F4F;
+  }
+  .mask.full-5,
+  .circle .fill-5 {
+    animation: fill-5 ease-in-out 2s;
+    transform: rotate(140deg);
+  }
+  @keyframes fill-5 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(140deg);
+    }
+  }
+
+  .mask .fill-6 {
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #2F4F4F;
+  }
+  .mask.full-6,
+  .circle .fill-6 {
+    animation: fill-6 ease-in-out 2s;
+    transform: rotate(152deg);
+  }
+  @keyframes fill-6 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(152deg);
+    }
+  }
+
+  .circle-wrap .inside {
+    width: 174px;
+    height: 173px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 170px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: #333;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+    font-family: sans-serif;
+  }
+
+  .inside p {
+    text-shadow: 2px 2px 8px goldenrod;
+  }
+
+  
 
 
 
