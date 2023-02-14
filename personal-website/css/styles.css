@@ -507,7 +507,76 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
+
+  .projects-section {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
   
+  .projects {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .projects h3 {
+    margin: 0 0 20px 0;
+  }
+
+  .web-1 {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .web-1 img {
+    width: 250px;
+    height: 250px;
+    object-position: center;
+    object-fit: contain;
+    margin: 10px 0 50px 0;
+    /* box-shadow: 0 2px 2px 2px #ccc; */
+    transition: 0.5s linear;
+  }
+
+  .web-1 img:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: none;
+  }
+
+  #portfolio .popup-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.9);
+    z-index: 100;
+    display: none;
+  }
+
+  #portfolio .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  #portfolio .popup-image img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+    object-position: center;
+  }
 
 
 

@@ -216,20 +216,40 @@
         <h2>Portfolio</h2>
         <div class="projects-section">
             <div class="projects">
-                <h3>HTML AND CSS Projects</h3>
+                <h3>HTML AND CSS Websites</h3>
+                <div class="web-1">
+                    <img src="images/website1.png"> 
+                    <img src="images/website4.png">
+                    <img src="images/website3.png">
+                    <img src="images/website2.png">
+                </div>
             </div>
             <div class="projects">
-                <h3>Tailwind CSS Projects</h3>
+                <h3>Tailwind CSS Websites</h3>
+                <div class="web-1">
+                    <img src="images/website1.png"> 
+                    <img src="images/website4.png">
+                    <img src="images/website3.png">
+                    <img src="images/website2.png">
+                </div>
             </div>
 
             <div class="projects">
-                <h3>Bootstrap Projects</h3>
+                <h3>Bootstrap Websites</h3>
             </div>
             <div class="projects">
                 <h3>Mobile Websites</h3>
             </div>
+            <div class="projects">
+                <h3>Wordpress Websites</h3>
+            </div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/website1.png">
         </div>
     </section>
+
 <!--
     <section id="newsletter">
         <h2>Newsletter</h2>
@@ -238,6 +258,18 @@
     <section id="contact">
         <h2>Contact</h2>
     </section> -->
+
+    <script>
+        document.querySelectorAll('.web-1 img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
