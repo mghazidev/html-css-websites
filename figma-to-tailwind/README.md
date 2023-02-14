@@ -7,4 +7,4 @@
 - Contact form.
 - Footer in the end.
 
-![N](/images/TheBox.png)
+![N](../images/TheBox.png)
