@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    
   }
   
   header {
     /* background-color: #333; */
     color: black;
     display: flex;
+    
     justify-content: space-between;
     padding: 1em;
     width: 90%;
@@ -21,7 +27,14 @@ body {
     align-items: centers;
   }
 
-  
+  header.sticky {
+    background: #fff;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    justify-content: space-evenly;
+    transition: 0.5s ;
+  }
 
   .logo {
     display: flex;
@@ -486,7 +499,6 @@ body {
     margin-left: 13px;
     color: #333;
     position: absolute;
-    z-index: 100;
     font-weight: 700;
     font-size: 2em;
     font-family: sans-serif;
@@ -521,15 +533,17 @@ body {
   }
 
   .projects h3 {
-    margin: 0 0 20px 0;
+    margin: 30px 0 30px 0;
+    font-size: 26px;
+    text-shadow: 2px 2px 5px#000;
   }
 
   .web-1 {
     display: flex;
-    gap: 50px;
+    
     flex-wrap: wrap;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .web-1 img {
@@ -577,6 +591,141 @@ body {
     object-fit: contain;
     object-position: center;
   }
+
+  #links {
+    margin: 50px 0 50px 0;
+    width: 70%;
+    margin: auto;
+  }
+
+  #links h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #333;
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #links p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px goldenrod;
+    margin-bottom: 20px;
+  }
+
+  .links-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .link {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .github {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+  .github h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px#000;
+  }
+
+  .github span {
+    font-size: 14px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px #000;
+    
+  }
+
+  .github ul {
+    list-style-type: none ;
+    margin: 10px 0 10px 0;
+  }
+
+  .github ul li {
+    margin-top: 10px;
+  }
+
+  .github ul li a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .github ul  li a:hover {
+    color: goldenrod;
+  }
+
+  .course h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px#000;
+  }
+
+  #contact {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #contact h2 {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #fff;
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
 
 
 
