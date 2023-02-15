@@ -553,12 +553,11 @@ body {
     object-fit: contain;
     margin: 10px 0 50px 0;
     /* box-shadow: 0 2px 2px 2px #ccc; */
-    transition: 0.5s linear;
+    transition: 0.2s linear;
   }
 
   .web-1 img:hover {
     transform: scale(1.1);
-    z-index: 100;
     box-shadow: none;
   }
 
@@ -677,57 +676,115 @@ body {
   }
 
   #contact {
-    background-color: #333;
-    color: #fff;
+    width: 60%;
+    margin: auto;
   }
 
   #contact h2 {
-    margin-top: 50px;
-    padding: 20px;
     text-align: center;
-    margin-bottom: 50px;
-    font-size: 32px;
-    color: #fff;
-    animation: flip; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 42px;
+    font-weight: bolder;
+    margin: 50px 0;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
+  .form-col {
+    background-color: #333;
+    flex-basis: 50%;
+    padding: 50px;
+  }
+
+  .form-col h3 {
+    font-size: 22px;
+    color: #fff;
   }
 
   form {
-    max-width: 500px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-  }
+
   input,
   textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid #666;
+  background: transparent;
+  color: #fff;
+}
 
+label {
+  padding: 10px 0; 
+  color: #fff;
+  margin-top: 20px;
+}
 
+::placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+button[type="submit"] {
+  background-color: #777;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+button[type="submit"]:hover {
+  background-color: #666;
+}
+
+.info-col {
+  flex-basis: 50%;
+  padding: 50px;
+  color: #333;
+}
+
+.info-col h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info-col p {
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: baseline;
+}
+
+.info span {
+  display: flex;
+  font-size: 12px;
+  align-items: baseline;
+  font-weight: bolder;
+}
+
+.info span p {
+  font-size: 12px;
+  font-weight: 100;
+  align-items: baseline;
+  margin-left: 10px;
+}
+
+.info i {
+  margin-right: 25px;
+}
 
 
 
