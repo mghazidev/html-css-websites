@@ -488,7 +488,13 @@ body {
     }
   }
 
-  .circle-wrap .inside {
+  .circle-wrap .inside1,
+  .circle-wrap .inside2,
+  .circle-wrap .inside3,
+  .circle-wrap .inside4,
+  .circle-wrap .inside5,
+  .circle-wrap .inside6
+   {
     width: 174px;
     height: 173px;
     border-radius: 50%;
@@ -504,8 +510,35 @@ body {
     font-family: sans-serif;
   }
 
-  .inside p {
-    text-shadow: 2px 2px 8px goldenrod;
+  .inside1 p {
+    /* text-shadow: 2px 2px 8px orange; */
+    color: orange;
+    filter: drop-shadow(2px 2px #ab5606);
+  }
+
+  .inside2 p {
+    /* text-shadow: 2px 2px 8px lightskyblue; */
+    color: lightskyblue;
+    filter: drop-shadow(2px 2px #1286ce);
+  }
+  .inside3 p {
+    /* text-shadow: 2px 2px 8px #1d53a9; */
+    color: rgb(41, 101, 141);
+    filter: drop-shadow(2px 2px #7498ae);
+  }
+  .inside4 p {
+    color: yellow;
+    filter: drop-shadow(2px 2px #2759c5);
+  }
+  .inside5 p {
+    /* text-shadow: 2px 2px 8px orange; */
+    color: rgb(67, 148, 145);
+    filter: drop-shadow(2px 2px #99a7cf);
+  }
+  .inside6 p {
+    /* text-shadow: 2px 2px 8px orange; */
+    color: rgb(79, 52, 141);
+    filter: drop-shadow(2px 2px #7134ff);
   }
 
   #portfolio h2{
@@ -536,11 +569,35 @@ body {
     margin: 30px 0 30px 0;
     font-size: 26px;
     text-shadow: 2px 2px 5px#000;
+    cursor: pointer;
+  }
+
+  .projects h3:hover {
+    color: black;
+    text-shadow: none;
+  }
+
+  #div1 {
+    display: none;
+  }
+
+  #div2 {
+    display: none;
+  }
+
+  #div3 {
+    display: none;
+  }
+
+  #div4 {
+    display: none;
+  }
+  #div5 {
+    display: none;
   }
 
   .web-1 {
     display: flex;
-    
     flex-wrap: wrap;
     margin-top: 20px;
     justify-content: space-evenly;
@@ -784,6 +841,35 @@ button[type="submit"]:hover {
 
 .info i {
   margin-right: 25px;
+}
+
+#footer {
+  width: 100%;
+  margin: 30px auto;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.wrapper ul li a{
+  margin-right: 10px;
+  color: #333;
+}
+
+.wrapper ul li a:hover {
+  color: #777;
 }
 
 
