@@ -219,7 +219,7 @@
         </div>
 
     </section>
-    <section id="portfolio">
+    <!-- <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="projects-section">
             <div class="projects">
@@ -273,6 +273,66 @@
         <div class="popup-image">
             <span>&times;</span>
             <img src="images/website1.png">
+        </div>
+    </section> -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects-section">
+            <div class="projects">
+                <h3 onclick="myFunction()">All</h3>
+            </div>
+            <div class="projects">
+                <h3 onclick="myFunction1()">HTML AND CSS Websites</h3>
+            </div>
+            <div class="projects">
+                <h3 onclick="myFunction2()">Tailwind CSS Websites</h3>
+            </div>
+
+            <div class="projects">
+                <h3 onclick="myFunction3()">Bootstrap Websites</h3>
+            </div>
+            <div class="projects">
+                <h3 onclick="myFunction4()">Mobile Websites</h3>
+            </div>
+            <div class="projects">
+                <h3 onclick="myFunction5()">Wordpress Websites</h3>
+            </div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/website1.png">
+        </div>
+
+        <div class="web-1" id="div1">
+            <img src="images/website1.png">
+            <img src="images/website4.png">
+            <img src="images/website3.png">
+            <img src="images/website2.png">
+        </div>
+        <div class="web-1" id="div2">
+            <img src="images/website5.png">
+            <img src="images/website6.png">
+        </div>
+        <div class="web-1" id="div3">
+            <img src="images/boot1.png">
+            <img src="images/boot2.png">
+            <img src="images/boot3.png">
+            <img src="images/boot4.png">
+        </div>
+        <div class="web-1" id="div4">
+            <img src="images/mob1.png">
+            <img src="images/mob2.png">
+            <img src="images/mob3.png">
+            <img src="images/mob4.png">
+            <img src="images/mob5.png">
+            <img src="images/mob7.png">
+        </div>
+        <div class="web-1" id="div5">
+            <img src="images/wordpress1.png">
+            <img src="images/wordpress3.png">
+            <img src="images/wordpress2.png">
+            <img src="images/wordpress5.png">
+            <img src="images/wordpress4.png">
         </div>
     </section>
     <section id="links">
@@ -358,70 +418,7 @@
         </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="projects-section">
-            <div class="projects">
-        
-                    <h3 onclick="myFunction1()">HTML AND CSS Websites</h3>
-              
-                <div class="web-1" id="div1">
-                    <img src="images/website1.png">
-                    <img src="images/website4.png">
-                    <img src="images/website3.png">
-                    <img src="images/website2.png">
-                </div>
-            </div>
-            <div class="projects">
-               
-                    <h3 onclick="myFunction2()">Tailwind CSS Websites</h3>
-                
-                <div class="web-1" id="div2">
-                    <img src="images/website5.png">
-                    <img src="images/website6.png">
-                </div>
-            </div>
 
-            <div class="projects">
-            
-                    <h3 onclick="myFunction3()">Bootstrap Websites</h3>
-        
-                <div class="web-1" id="div3">
-                    <img src="images/boot1.png">
-                    <img src="images/boot2.png">
-                    <img src="images/boot3.png">
-                    <img src="images/boot4.png">
-                </div>
-            </div>
-            <div class="projects">
-                
-                    <h3 onclick="myFunction4()">Mobile Websites</h3>
-                
-                <div class="web-1" id="div4">
-                    <img src="images/mob1.png">
-                    <img src="images/mob2.png">
-                    <img src="images/mob3.png">
-                    <img src="images/mob4.png">
-                    <img src="images/mob5.png">
-                    <img src="images/mob7.png">
-                </div>
-            </div>
-            <div class="projects">
-                    <h3 onclick="myFunction5()">Wordpress Websites</h3>
-                <div class="web-1" id="div5">
-                    <img src="images/wordpress1.png">
-                    <img src="images/wordpress3.png">
-                    <img src="images/wordpress2.png">
-                    <img src="images/wordpress5.png">
-                    <img src="images/wordpress4.png">
-                </div>
-            </div>
-        </div>
-        <div class="popup-image">
-            <span>&times;</span>
-            <img src="images/website1.png">
-        </div>
-    </section>
 
     <script type="text/javascript">
         document.querySelectorAll('.web-1 img').forEach(image => {
@@ -437,6 +434,19 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         });
+
+        function myFunction() {
+
+            document.getElementById("div1").style.display = "block";
+
+            document.getElementById("div2").style.display = "block";
+
+            document.getElementById("div3").style.display = "block";
+
+            document.getElementById("div4").style.display = "block";
+            document.getElementById("div5").style.display = "block";
+
+        }
 
         function myFunction1() {
 
