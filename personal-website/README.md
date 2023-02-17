@@ -1,10 +1,11 @@
 # Website using html and css grid and flexbox.
 
 ## _About Website_
-- This wbsite has logo and 5 pages on header and main heading with text and buttons on left.
-- Different section using flex and grid.
-- Pricing plans section.
-- Different hover effectsand properties for designing.
-- Also have slideshow in footer.
+- This wbsite has logo and 10 links in the header menu
+- About section, qualifications section.
+- Have working circular progress bar.
+- Hide n Show portfolio section.
+- Useful links and contact form.
+- Footer. 
 
 ![N](images/Welcome%20Ghazi%20(1).png)
