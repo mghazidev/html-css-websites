@@ -12,19 +12,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    
   }
   
   header {
     /* background-color: #333; */
     color: black;
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em;
     width: 90%;
     margin: auto;
-    align-items: centers;
   }
 
   header.sticky {
@@ -56,6 +54,7 @@ body {
   
   .nav-bar nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -76,6 +75,33 @@ body {
     border-radius: 20px;
     animation: fadeIn;
     animation-duration: 1s;
+  }
+
+  @media(max-width: 600px) {
+    header {
+      background-color: red;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header.sticky {
+      position: relative;
+    }
+  
+    .logo {
+    }
+
+    .nav-bar nav ul {
+      background: #333;
+    
+    }
+    .nav-bar nav ul li{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      margin-right: 10px;
+    }
   }
 
   /* .hero {

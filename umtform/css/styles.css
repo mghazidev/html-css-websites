@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    background-image: linear-gradient(rgba(108, 106, 106, 0.5),rgba(246, 246, 246, 0.5)), url(../images/UMT-1280x720-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    opacity: 0.9;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+
+.form form input {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #949393;
+    z-index: 100;
+}
+
+.form form input::placeholder {
+    font-size: 12px;
+    color: #000;
+}
+
+.form form button {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(18, 72, 171);
+    color: #fff;
+    font-size: 12px;
+    border: 0;
+}
+
+.form form a {
+    color: rgb(18, 72, 171);
+    margin: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form form span {
+    margin: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bold p {
+    margin: 10px;
+    font-size: 14px;
+    color: rgb(6, 35, 89);
+    font-weight: 700;
+    font: bold;
+}
+
+.col {
+    text-align: center;
+    margin: 10px;
+    color: #000;
+    font-size: 12px;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.logo img {
+    margin: 20px;
+}
