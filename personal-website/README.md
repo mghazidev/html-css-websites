@@ -7,4 +7,4 @@
 - Different hover effectsand properties for designing.
 - Also have slideshow in footer.
 
-![N](/images/Welcome%20Ghazi%20(1).png)
+![N](../images/Welcome%20Ghazi%20(1).png)
