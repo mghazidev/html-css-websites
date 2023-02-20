@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.container {
+    margin: auto;
+    height: 100vh;
+    width: 70%;
+}
+
+.slider-wrapper {
+    padding: 20px;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider img {
+    width: 70%;
+   position: absolute;
+}
+
+.buttons  {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+a.left {
+    z-index: 100;
+
+}
+
+.left i {
+    color: #333;
+    z-index: 100;
+    font-size: 60px;
+}
+
+a.right {
+    z-index: 100;
+}
+
+.right i {
+    color: #333;
+    z-index: 100;
+    font-size: 60px;
+}
