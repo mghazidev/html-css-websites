@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
     <script src="jq/jquery-3.6.3.min.js"></script>
     <script src="jq/jquery.scrollUp.min.js"></script>
@@ -363,94 +364,7 @@
         </div>
     </section>
 
-    <script type="text/javascript">
-        document.querySelectorAll('.web-1 img').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-image').style.display = 'block';
-                document.querySelector('.popup-image img').src = image.getAttribute('src');
-            }
-        });
-        document.querySelector('.popup-image span').onclick = () => {
-            document.querySelector('.popup-image').style.display = 'none';
-        };
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-
-        function myFunction() {
-
-            document.getElementById("div1").style.display = "block";
-
-            document.getElementById("div2").style.display = "block";
-
-            document.getElementById("div3").style.display = "block";
-
-            document.getElementById("div4").style.display = "block";
-            document.getElementById("div5").style.display = "block";
-
-        }
-
-        function myFunction1() {
-
-            document.getElementById("div1").style.display = "block";
-
-            document.getElementById("div2").style.display = "none";
-
-            document.getElementById("div3").style.display = "none";
-
-            document.getElementById("div4").style.display = "none";
-            document.getElementById("div5").style.display = "none";
-
-        }
-
-        function myFunction2() {
-
-            document.getElementById("div1").style.display = "none";
-
-            document.getElementById("div2").style.display = "block";
-
-            document.getElementById("div3").style.display = "none";
-
-            document.getElementById("div4").style.display = "none";
-            document.getElementById("div5").style.display = "none";
-        }
-
-        function myFunction3() {
-
-            document.getElementById("div1").style.display = "none";
-
-            document.getElementById("div2").style.display = "none";
-
-            document.getElementById("div3").style.display = "block";
-
-            document.getElementById("div4").style.display = "none";
-            document.getElementById("div5").style.display = "none";
-        }
-
-        function myFunction4() {
-
-            document.getElementById("div1").style.display = "none";
-
-            document.getElementById("div2").style.display = "none";
-
-            document.getElementById("div3").style.display = "none";
-
-            document.getElementById("div4").style.display = "block";
-            document.getElementById("div5").style.display = "none";
-        }
-        function myFunction5() {
-
-            document.getElementById("div1").style.display = "none";
-
-            document.getElementById("div2").style.display = "none";
-
-            document.getElementById("div3").style.display = "none";
-
-            document.getElementById("div4").style.display = "none";
-            document.getElementById("div5").style.display = "block";
-        }  
-    </script>
+    
 </body>
 
 </html>
