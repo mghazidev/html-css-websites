@@ -207,7 +207,7 @@ body {
     color: #333;
     animation: flip; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
   }
 
   .column {
@@ -263,7 +263,6 @@ body {
     color: #333;
     animation: flip; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   .container {
@@ -364,7 +363,6 @@ body {
     color: #333;
     animation: flip; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   .progress {
@@ -378,6 +376,8 @@ body {
 
   .circle-wrap {
     width: 200px;
+    display: flex;
+    flex-wrap: wrap;
     height: 200px;
     background: #fff;
     border-radius: 50%;
@@ -539,141 +539,35 @@ body {
   .inside1 p {
     /* text-shadow: 2px 2px 8px orange; */
     color: orange;
-    filter: drop-shadow(2px 2px #ab5606);
+    /* filter: drop-shadow(2px 2px #ab5606); */
   }
 
   .inside2 p {
     /* text-shadow: 2px 2px 8px lightskyblue; */
     color: lightskyblue;
-    filter: drop-shadow(2px 2px #1286ce);
+    /* filter: drop-shadow(2px 2px #1286ce); */
   }
   .inside3 p {
     /* text-shadow: 2px 2px 8px #1d53a9; */
     color: rgb(41, 101, 141);
-    filter: drop-shadow(2px 2px #7498ae);
+    /* filter: drop-shadow(2px 2px #7498ae); */
   }
   .inside4 p {
     color: yellow;
-    filter: drop-shadow(2px 2px #2759c5);
+    /* filter: drop-shadow(2px 2px #2759c5); */
   }
   .inside5 p {
     /* text-shadow: 2px 2px 8px orange; */
     color: rgb(67, 148, 145);
-    filter: drop-shadow(2px 2px #99a7cf);
+    /* filter: drop-shadow(2px 2px #99a7cf); */
   }
   .inside6 p {
     /* text-shadow: 2px 2px 8px orange; */
     color: rgb(79, 52, 141);
-    filter: drop-shadow(2px 2px #7134ff);
+    /* filter: drop-shadow(2px 2px #7134ff); */
   }
 
-  /* #portfolio h2{
-    margin-top: 150px;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 32px;
-    color: #333;
-    animation: flip;
-    animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  } */
-
-
-  /* .projects-section {
-    display: flex;
-    width: 70%;
-    margin: auto;
-    flex-wrap: wrap;
-  }
   
-  .projects {
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  .projects h3 {
-    margin: 30px 0 30px 0;
-    font-size: 26px;
-    text-shadow: 2px 2px 5px#000;
-    cursor: pointer;
-  }
-
-  .projects h3:hover {
-    color: black;
-    text-shadow: none;
-  } */
-
-  /* #div1 {
-    display: none;
-  }
-
-  #div2 {
-    display: none;
-  }
-
-  #div3 {
-    display: none;
-  }
-
-  #div4 {
-    display: none;
-  }
-  #div5 {
-    display: none;
-  }
-
-  .web-1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: space-evenly;
-  } */
-
-  /* .web-1 img {
-    width: 250px;
-    height: 250px;
-    object-position: center;
-    object-fit: contain;
-    margin: 10px 0 50px 0;
-    
-    transition: 0.2s linear;
-  }
-
-  .web-1 img:hover {
-    transform: scale(1.1);
-    box-shadow: none;
-  }
-
-  #portfolio .popup-image {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0,.9);
-    z-index: 100;
-    display: none;
-  }
-
-  #portfolio .popup-image span {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-weight: bolder;
-    font-size: 50px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
-  }
-
-  #portfolio .popup-image img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    object-fit: contain;
-    object-position: center;
-  } */
-
   #portfolio h2{
     margin-top: 150px;
     text-align: center;
@@ -682,12 +576,12 @@ body {
     color: #333;
     animation: flip; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   .projects-section {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     justify-content: space-between;
   }
@@ -701,12 +595,15 @@ body {
   .projects h3 {
     margin: 30px 0 30px 0;
     font-size: 26px;
-    text-shadow: 2px 2px 5px#000;
     cursor: pointer;
+    padding: 5px;
   }
 
   .projects h3:hover {
-    color: black;
+    color: #fff;
+   
+    border-radius: 20px;
+    background: #333;
     text-shadow: none;
   }
 
@@ -786,6 +683,7 @@ body {
   #links {
     margin: 50px 0 50px 0;
     width: 70%;
+    
     margin: auto;
   }
 
@@ -796,14 +694,12 @@ body {
     color: #333;
     animation: flip; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   #links p {
     text-align: center;
     font-size: 14px;
     font-weight: bolder;
-    text-shadow: 2px 2px 5px goldenrod;
     margin-bottom: 20px;
   }
 
@@ -811,6 +707,44 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media(max-width: 400px) {
+    .links-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .link {
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .form-col {
+      background-color: #333;
+      flex-basis: 100%;
+    }
+  
+    .form-col h3 {
+      
+      color: #fff;
+    }
+  }
+
+  @media(max-width: 921px) {
+    .links-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .link {
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+ 
   }
 
 
@@ -891,8 +825,8 @@ body {
   }
 
   .form-col h3 {
-    font-size: 22px;
     color: #fff;
+    font-size: 1.5vw;
   }
 
   form {
