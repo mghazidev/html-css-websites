@@ -66,7 +66,10 @@ body {
     padding: 1em;
     font-weight: 500;
     text-decoration: none;
+  }
 
+  .menu {
+    display: none;
   }
   
    .nav-bar nav a:hover {
@@ -77,24 +80,35 @@ body {
     animation-duration: 1s;
   }
 
-  @media(max-width: 600px) {
+  @media(max-width: 1027px) {
     header {
-      background-color: red;
       width: 100%;
-      justify-content: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
     }
   
     header.sticky {
       position: relative;
     }
-  
-    .logo {
+
+    .menu {
+      display: block;
     }
 
-    .nav-bar nav ul {
-      background: #333;
-    
+    .menu i {
+      font-size: 22px;
     }
+  
+    .logo {
+      display: flex;
+   }
+
+   .nav-bar {
+    display: none;
+   }
+
     .nav-bar nav ul li{
       width: 100%;
       display: flex;
@@ -102,6 +116,11 @@ body {
       color: #fff;
       margin-right: 10px;
     }
+    .nav-bar {
+      animation: fadeIn;
+      animation-duration: 1s;
+    }
+
   }
 
   /* .hero {
@@ -126,13 +145,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
   }
 
   .content h1 {
     font-size: 45px;
     color: #333;
     margin: 50px 0 40px 0;
+    text-align: center;
   }
 
   .content p {
@@ -145,6 +165,8 @@ body {
   .content h2 {
     margin: 0 0 50px 0;
     color: #333;
+    text-align: center;
+    flex-wrap: wrap;
   }
 
   .content span a {
@@ -194,6 +216,17 @@ body {
     margin-right: 10px;
   }
 
+
+  @media(max-width: 420px) {
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
   #about {
     width: 60%;
     margin: auto;
@@ -212,8 +245,10 @@ body {
 
   .column {
     display: flex;
+    width: 100%;
     margin: 50px 0 0 0;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .col-1 {
@@ -221,6 +256,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
 
@@ -243,12 +279,34 @@ body {
     flex-basis: 50%;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .col-2 img {
     width: 70%;
     box-shadow: 10px 10px #333;
   }
+
+  @media(max-width: 620px) {
+    .col-1 {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .col-2 {
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
 
   #qualifications {
     margin-top: 50px;
@@ -366,7 +424,7 @@ body {
   }
 
   .progress {
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -382,13 +440,8 @@ body {
     background: #fff;
     border-radius: 50%;
   }
+
   
-  @media only screen and (max-width: 580px) {
-    .progress {
-        display: inline;
-        justify-content: center;
-    }
-  }
 
   .circle-wrap .circle .mask,
   .circle-wrap .circle .fill-1,
@@ -567,6 +620,60 @@ body {
     /* filter: drop-shadow(2px 2px #7134ff); */
   }
 
+
+  @media(max-width:360px) {
+
+    .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3,
+  .circle-wrap .circle .fill-4,
+  .circle-wrap .circle .fill-5,
+  .circle-wrap .circle .fill-6 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.mask .fill-1,
+.mask .fill-2,
+.mask .fill-3,
+.mask .fill-4,
+.mask .fill-5,
+.mask .fill-6
+ {
+  clip: rect(0px, 75px, 200px, 0px);
+  background-color: #2F4F4F;
+}
+
+.circle-wrap .inside1,
+  .circle-wrap .inside2,
+  .circle-wrap .inside3,
+  .circle-wrap .inside4,
+  .circle-wrap .inside5,
+  .circle-wrap .inside6
+   {
+    width: 125px;
+    height: 124px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: #333;
+    position: absolute;
+    font-weight: 700;
+    font-size: 2em;
+    font-family: sans-serif;
+  }
+}
   
   #portfolio h2{
     margin-top: 150px;
@@ -721,6 +828,12 @@ body {
       flex-wrap: wrap;
       text-align: center;
     }
+
+    .github ul a {
+      display: none;
+    }
+
+
     .form-col {
       background-color: #333;
       flex-basis: 100%;
