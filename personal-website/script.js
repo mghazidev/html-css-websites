@@ -1,5 +1,16 @@
-
-        document.querySelectorAll('.web-1 img').forEach(image => {
+      
+    const resp = document.getElementById("menu");
+    resp.addEventListener('click', function() {
+       const items = document.getElementById("items")
+        if (items.style.display === 'block') {
+            items.style.display = 'none';
+        }
+        else {
+            items.style.display = 'block';
+        }
+    })
+      
+      document.querySelectorAll('.web-1 img').forEach(image => {
             image.onclick = () => {
                 document.querySelector('.popup-image').style.display = 'block';
                 document.querySelector('.popup-image img').src = image.getAttribute('src');

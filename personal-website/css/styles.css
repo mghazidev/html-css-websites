@@ -12,6 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   header {
@@ -83,14 +84,22 @@ body {
   @media(max-width: 1027px) {
     header {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
     }
   
     header.sticky {
       position: relative;
+    }
+
+    .topbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .menu {
@@ -122,18 +131,6 @@ body {
     }
 
   }
-
-  /* .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url();
-  } */
 
   .hero {
     animation: rubberBand;
@@ -701,7 +698,7 @@ body {
 
   .projects h3 {
     margin: 30px 0 30px 0;
-    font-size: 26px;
+    font-size: 20px;
     cursor: pointer;
     padding: 5px;
   }
@@ -787,10 +784,24 @@ body {
     object-position: center;
   }
 
+  @media(max-width: 600px) {
+    .projects-section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .projects h3 {
+      font-size: 12px;
+    }
+  }
+
   #links {
     margin: 50px 0 50px 0;
     width: 70%;
-    
     margin: auto;
   }
 
@@ -819,8 +830,15 @@ body {
   @media(max-width: 400px) {
     .links-section {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    #links {
+      margin: 50px 0 50px 0;
+      width: 90%;
+      margin: auto;
     }
 
     .link {
@@ -829,9 +847,13 @@ body {
       text-align: center;
     }
 
-    .github ul a {
-      display: none;
+    .github ul li a {
+      text-align: center;
     }
+
+     /* .github ul a {
+      display: none;
+    }  */
 
 
     .form-col {
@@ -853,13 +875,17 @@ body {
     }
 
     .link {
-      flex-basis: 100%;
+    
       flex-wrap: wrap;
       text-align: center;
     }
+
+    .github ul,
+    .github h3 {
+      margin-top: 20px;
+    }
  
   }
-
 
   .link {
     flex-basis: 50%;
@@ -870,6 +896,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -877,14 +904,11 @@ body {
   .github h3 {
     font-size: 24px;
     font-weight: bolder;
-    text-shadow: 2px 2px 5px#000;
   }
 
   .github span {
     font-size: 14px;
     font-weight: 900;
-    text-shadow: 2px 2px 5px #000;
-    
   }
 
   .github ul {
@@ -914,8 +938,33 @@ body {
     text-shadow: 2px 2px 5px#000;
   }
 
+  @media(max-width: 944px) {
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .form-col {
+      width: 100%;
+      padding: 10px;
+    }
+    .info-col {
+      width: 100%;
+      color: #333;
+      margin-top: 30px;
+    }
+  }
+
   #contact {
     width: 60%;
+    margin: auto;
+  }
+
+  .contact-section {
+    width: 100%;
     margin: auto;
   }
 
@@ -929,6 +978,7 @@ body {
   .contact-form {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
   
   .form-col {
@@ -939,7 +989,7 @@ body {
 
   .form-col h3 {
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 26px;
   }
 
   form {
@@ -987,12 +1037,16 @@ button[type="submit"]:hover {
 
 .info-col {
   flex-basis: 50%;
-  padding: 50px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
   color: #333;
 }
 
 .info-col h3 {
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 

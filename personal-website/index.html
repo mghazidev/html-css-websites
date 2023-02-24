@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,26 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css">
-    <script src="script.js"></script>
+    
     <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
-    <script src="jq/jquery-3.6.3.min.js"></script>
-    <script src="jq/jquery.scrollUp.min.js"></script>
-    <script>
-        $(function () {
-            $.scrollUp({
-                scrollImg: true,
-            });
-        });
-    </script>
 </head>
 
 <body>
     <header> 
-        <div class="logo">
-            <img src="images/logo2.png">
-        </div>
-        <div class="menu" onclick="item()">
-            <i class="fa-solid fa-bars"></i>
+        <div class="topbar">
+            <div class="logo">
+                <img src="images/logo2.png">
+            </div>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
         <div class="nav-bar" id="items">
             <nav>
@@ -318,6 +310,7 @@
         </div>
     </section>
     <section id="contact">
+        <div class="contact-section">
         <h2>Keep In Touch</h2>
         <div class="contact-form">
             <div class="form-col">
@@ -352,6 +345,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <section id="footer">
         <div class="wrapper">
@@ -366,7 +360,7 @@
         </div>
     </section>
 
-    
+    <script src="script.js"></script>    
 </body>
 
 </html>
