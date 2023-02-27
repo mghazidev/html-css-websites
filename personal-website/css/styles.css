@@ -410,6 +410,7 @@ body {
     margin-top: 5px;
   }
 
+
   #skills h2 {
     text-align: center;
     margin-top: 50px;
@@ -421,7 +422,7 @@ body {
   }
 
   .progress {
-    width: 60%;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -436,6 +437,26 @@ body {
     height: 200px;
     background: #fff;
     border-radius: 50%;
+  }
+
+  .cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: 230px;
+    align-items: flex-end;
+  }
+
+  .cont1 {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .cont1 p {
+    font-size: 20px;
+    text-align: center;
   }
 
   
@@ -584,19 +605,6 @@ body {
     font-weight: 700;
     font-size: 2em;
     font-family: sans-serif;
-  }
-
-  .cont {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    overflow: auto;
-  }
-
-  .cont p {
-    margin: 0;
-    flex-wrap: wrap;
   }
 
  
