@@ -280,9 +280,9 @@
 
   .staff-sec{
     display: flex;
+    flex-wrap: wrap; 
     grid-column: 1/5;
     border-radius: 0 15px 15px 0;
-    column-gap: 10px;
     padding: 20px;
     margin-bottom: 0;
     background-color: #fff;
@@ -290,9 +290,9 @@
 }
 
   .staff {
-    flex-basis: 50%;
+    flex-basis: 20%;
     border-radius: 15px;
-    height: fit-content;
+    margin-top: 10px;
   }
 
   .staff .content {
@@ -315,6 +315,7 @@
   .content h1 {
     font-size: 20px;
     margin-top: 15px;
+    text-align: center;
   }
 
   .content span {
@@ -342,6 +343,7 @@
   .content-1 h1 {
     font-size: 20px;
     margin-top: 15px;
+    text-align: center;
   }
 
   .content-1 span {
@@ -370,6 +372,7 @@
   .content-2 h1 {
     font-size: 20px;
     margin-top: 15px;
+    text-align: center;
   }
 
   .content-2 span {
@@ -397,6 +400,7 @@
 
   .content-3 h1 {
     font-size: 20px;
+    text-align: center;
     margin-top: 15px;
   }
 
@@ -418,9 +422,9 @@
   .date  {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 100px;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   .date i {
@@ -429,7 +433,7 @@
   }
 
   .date h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .days {
@@ -471,16 +475,17 @@
 
   .teach-sec{
     display: flex;
+    flex-wrap: wrap;
     grid-column: 1/5;
-    column-gap: 10px; 
 }
 
   .teach{
-    flex-basis: 32%;
+    flex-basis: 24%;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background-color: #fff;
+    margin: auto;
   }
 
   .teach img {
@@ -511,9 +516,9 @@
   }
 
   .teach-1{
-    flex-basis: 32%;
+    flex-basis: 24%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 15px;
     align-items: center;
     justify-content: center;
@@ -522,7 +527,7 @@
   }
 
   .teach-1 i{
-    font-size: 100px;
+    font-size: 6vw;
     color: pink;
   }
 
@@ -572,16 +577,17 @@
 }
 
 .footer-sec {
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
     margin-top: 20px;
+    display: flex;
+    width: 100%;
 }
 
 .table-sec {
     display: flex;
     flex-direction: column;
-    grid-column: 1/6;
+    width: 100%;
     background-color: #fff;
+    overflow: auto;
     padding: 20px;
     border-radius: 25px 25px 25px 0;
 }
@@ -660,9 +666,9 @@ td img {
 }
 
 .schedule {
-    grid-column: 6/-1;
     padding: 10px;
     background-color: #fff;
+    width: 40%;
     border-radius: 25px 0 0 25px;
     margin-left: 10px;
 }
@@ -675,15 +681,18 @@ td img {
 .fields-sec {
     padding: 10px;
     margin-top: 20px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
 .field {
    display: flex;
    align-items: baseline;
    justify-content: space-between;
-   line-height: 0;
-   
+   text-align: center;
 }
+
 
 .field h2 i {
     margin-right: 10px;
@@ -697,7 +706,6 @@ td img {
 }
 
 .fields-sec p {
-    
     line-height: 1;
     margin-left: 28px;
 }
