@@ -12,11 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css">
-
     <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="newsletter">
+        <div class="popup" id="popup-letter">
+            <div class="cross" id="cancel">&times;</div>
+            <div class="popup-form">
+                <h3>WELCOME</h3>
+                <form action="send-email.php" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="email" name="email" placeholder="Password" required>
+                    <p>Forgot Password?</p>
+                    <button class="btn" type="submit">Login In</button>
+                    <span>Not a member?<i>Signup here</i></span>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="topbar">
             <div class="logo">
@@ -36,6 +50,7 @@
                     <li><a href="#portfolio">Portfolio/Projects</a></li>
                     <li><a href="#links">Github link</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li id="pop"><a href="#">Login</a></li>
                     <li><a href="https://www.linkedin.com/in/mghazidev/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
@@ -128,7 +143,7 @@
                         <div class="fill-1"></div>
                     </div>
                     <div class="inside1"><span>90%</span>
-                        
+
                     </div>
                 </div>
                 <div class="cont">
@@ -219,7 +234,6 @@
                     </div>
                 </div>
             </div>
-
             <!--6st progress-->
             <div class="circle-wrap">
                 <div class="circle">
@@ -240,153 +254,158 @@
                 </div>
             </div>
         </div>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="projects-section">
-            <div class="projects">
-                <h3 onclick="myFunction()">All</h3>
-            </div>
-            <div class="projects">
-                <h3 onclick="myFunction1()">HTML and CSS Websites</h3>
-            </div>
-            <div class="projects">
-                <h3 onclick="myFunction2()">Tailwind CSS Websites</h3>
-            </div>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="projects-section">
+                <div class="projects">
+                    <h3 onclick="myFunction()">All</h3>
+                </div>
+                <div class="projects">
+                    <h3 onclick="myFunction1()">HTML and CSS Websites</h3>
+                </div>
+                <div class="projects">
+                    <h3 onclick="myFunction2()">Tailwind CSS Websites</h3>
+                </div>
 
-            <div class="projects">
-                <h3 onclick="myFunction3()">Bootstrap Websites</h3>
-            </div>
-            <div class="projects">
-                <h3 onclick="myFunction4()">Mobile Websites</h3>
-            </div>
-            <div class="projects">
-                <h3 onclick="myFunction5()">Wordpress Websites</h3>
-            </div>
-        </div>
-        <div class="popup-image">
-            <span>&times;</span>
-            <img src="images/website1.png">
-        </div>
-
-        <div class="web-1" id="div1">
-            <img src="images/website1.png">
-            <img src="images/website4.png">
-            <img src="images/website3.png">
-            <img src="images/website2.png">
-        </div>
-        <div class="web-1" id="div2">
-            <img src="images/website5.png">
-            <img src="images/website6.png">
-        </div>
-        <div class="web-1" id="div3">
-            <img src="images/boot1.png">
-            <img src="images/boot2.png">
-            <img src="images/boot3.png">
-            <img src="images/boot4.png">
-        </div>
-        <div class="web-1" id="div4">
-            <img src="images/mob1.png">
-            <img src="images/mob2.png">
-            <img src="images/mob3.png">
-            <img src="images/mob4.png">
-            <img src="images/mob5.png">
-            <img src="images/mob7.png">
-        </div>
-        <div class="web-1" id="div5">
-            <img src="images/wordpress1.png">
-            <img src="images/wordpress3.png">
-            <img src="images/wordpress2.png">
-            <img src="images/wordpress5.png">
-            <img src="images/wordpress4.png">
-        </div>
-    </section>
-    <section id="links">
-        <h2>Usefull Links</h2>
-        <p>You will get help from these links </p>
-        <div class="links-section">
-            <div class="link">
-                <div class="github">
-                    <h3>GIthub links</h3>
-
-                    <ul>
-                        <li><span>My Profile: </span><a href="https://github.com/mghazidev"
-                                target="_blank">https://github.com/mghazidev</a></li>
-                        <li><span>Html & Css Projects: </span><a href="https://github.com/mghazidev/html-css-websites"
-                                target="_blank">https://github.com/mghazidev/html-css-websites</a></li>
-                        <li><span>Javascript Learning: </span><a href="https://github.com/mghazidev/JavaScript"
-                                target="_blank">https://github.com/mghazidev/JavaScript</a></li>
-                        <li><span>Wordpress Projects: </span><a href="https://github.com/mghazidev/Wordpress_Websites"
-                                target="_blank">https://github.com/mghazidev/Wordpress_Websites</a></li>
-                    </ul>
+                <div class="projects">
+                    <h3 onclick="myFunction3()">Bootstrap Websites</h3>
+                </div>
+                <div class="projects">
+                    <h3 onclick="myFunction4()">Mobile Websites</h3>
+                </div>
+                <div class="projects">
+                    <h3 onclick="myFunction5()">Wordpress Websites</h3>
                 </div>
             </div>
-            <div class="link">
-                <div class="github">
-                    <h3>Course Links</h3>
-                    <ul>
-                        <li><span>Python Course from Udemy: </span><a
-                                href="https://github.com/mghazidev/Complete-Python-3-Bootcamp"
-                                target="_blank">https://github.com/mghazidev/Complete-Python-3-Bootcamp</a></li>
-                        <li><span>Practice Game Python: </span><a href="https://github.com/mghazidev/learning-python"
-                                target="_blank">https://github.com/mghazidev/learning-python</a></li>
-                    </ul>
-                </div>
+             <div class="popup-image">
+                <span>&times;</span>
+                <img src="images/website1.png">
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact-section">
-            <h2>Keep In Touch</h2>
-            <div class="contact-form">
-                <div class="form-col">
-                    <h3>Send me a message</h3>
-                    <form action="#" method="post">
-                        <!-- <label for="name">Name:</label> -->
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <!-- <label for="email">Email:</label> -->
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <!-- <label for="subject">Subject:</label> -->
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
+
+            <div class="web-1" id="div1">
+                <img src="images/website1.png">
+                <img src="images/website4.png">
+                <img src="images/website3.png">
+                <img src="images/website2.png">
+            </div>
+            <div class="web-1" id="div2">
+                <img src="images/website5.png">
+                <img src="images/website6.png">
+            </div>
+            <div class="web-1" id="div3">
+                <img src="images/boot1.png">
+                <img src="images/boot2.png">
+                <img src="images/boot3.png">
+                <img src="images/boot4.png">
+            </div>
+            <div class="web-1" id="div4">
+                <img src="images/mob1.png">
+                <img src="images/mob2.png">
+                <img src="images/mob3.png">
+                <img src="images/mob4.png">
+                <img src="images/mob5.png">
+                <img src="images/mob7.png">
+            </div>
+            <div class="web-1" id="div5">
+                <img src="images/wordpress1.png">
+                <img src="images/wordpress3.png">
+                <img src="images/wordpress2.png">
+                <img src="images/wordpress5.png">
+                <img src="images/wordpress4.png">
+            </div>
+        </section>
+        <section id="links">
+            <h2>Usefull Links</h2>
+            <p>You will get help from these links </p>
+            <div class="links-section">
+                <div class="link">
+                    <div class="github">
+                        <h3>GIthub links</h3>
+
+                        <ul>
+                            <li><span>My Profile: </span><a href="https://github.com/mghazidev"
+                                    target="_blank">https://github.com/mghazidev</a></li>
+                            <li><span>Html & Css Projects: </span><a
+                                    href="https://github.com/mghazidev/html-css-websites"
+                                    target="_blank">https://github.com/mghazidev/html-css-websites</a></li>
+                            <li><span>Javascript Learning: </span><a href="https://github.com/mghazidev/JavaScript"
+                                    target="_blank">https://github.com/mghazidev/JavaScript</a></li>
+                            <li><span>Wordpress Projects: </span><a
+                                    href="https://github.com/mghazidev/Wordpress_Websites"
+                                    target="_blank">https://github.com/mghazidev/Wordpress_Websites</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="info-col">
-                    <h3>Contact me</h3>
-                    <p>I'm open for any suggestion, help or just to have a chat.</p>
-                    <div class="info">
-                        <i class="fa-solid fa-location-dot"></i><span>Address: <p>Gulshan-e-Hadeed, Karachi, Pakistan.
-                            </p>
-                        </span>
-                    </div>
-                    <div class="info">
-                        <i class="fa-solid fa-phone"></i><span>Phone: <p>111-2222-3333.</p></span>
-                    </div>
-                    <div class="info">
-                        <i class="fa-brands fa-telegram"></i><span>Email: <p>info@gmail.com</p></span>
-                    </div>
-                    <div class="info">
-                        <i class="fa-solid fa-earth-asia"></i><span>Website: <p>babulfatima.org.</p></span>
+                <div class="link">
+                    <div class="github">
+                        <h3>Course Links</h3>
+                        <ul>
+                            <li><span>Python Course from Udemy: </span><a
+                                    href="https://github.com/mghazidev/Complete-Python-3-Bootcamp"
+                                    target="_blank">https://github.com/mghazidev/Complete-Python-3-Bootcamp</a></li>
+                            <li><span>Practice Game Python: </span><a
+                                    href="https://github.com/mghazidev/learning-python"
+                                    target="_blank">https://github.com/mghazidev/learning-python</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="footer">
-        <div class="wrapper">
-            <p>© 2023 mghazidev. All Rights Reserved.</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/mghazidev/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href="https://github.com/mghazidev"><i class="fa-brands fa-square-github"></i></a></li>
-            </ul>
-        </div>
-    </section>
+        </section>
+        <section id="contact">
+            <div class="contact-section">
+                <h2>Keep In Touch</h2>
+                <div class="contact-form">
+                    <div class="form-col">
+                        <h3>Send me a message</h3>
+                        <form action="send-email.php" method="post">
+                            <!-- <label for="name">Name:</label> -->
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <!-- <label for="subject">Subject:</label> -->
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="info-col">
+                        <h3>Contact me</h3>
+                        <p>I'm open for any suggestion, help or just to have a chat.</p>
+                        <div class="info">
+                            <i class="fa-solid fa-location-dot"></i><span>Address: <p>Gulshan-e-Hadeed, Karachi,
+                                    Pakistan.
+                                </p>
+                            </span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-phone"></i><span>Phone: <p>111-2222-3333.</p></span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-brands fa-telegram"></i><span>Email: <p>info@gmail.com</p></span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-earth-asia"></i><span>Website: <p>babulfatima.org.</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="wrapper">
+                <p>© 2023 mghazidev. All Rights Reserved.</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/mghazidev/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="https://github.com/mghazidev"><i class="fa-brands fa-square-github"></i></a></li>
+                </ul>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
