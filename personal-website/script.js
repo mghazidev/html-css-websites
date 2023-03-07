@@ -1,16 +1,38 @@
-const x = document.getElementById("pop")
-x.addEventListener("click", function() {
-    const y = document.getElementById("popup-letter")
-    y.style.display = 'block';
-    if(y.style.display ==='block') {
-        const z = document.getElementById("cancel")
-        z.addEventListener("click",function () {
-            document.getElementById("popup-letter").style.display = 'none';
-        })
-    } else {
-        y.style.display = 'block';
+$(document).ready(function() {
+
+    function showletter() {
+        $('#popup-letter').show();
     }
+
+    function hideletter() {
+        $('#popup-letter').hide();
+    }
+
+    setTimeout(showletter, 3000);
+    const z = document.getElementById("cancel")
+    z.addEventListener("click",function () {
+        document.getElementById("popup-letter").style.display = 'none';
+    })
+
 })
+
+
+
+
+
+ const x = document.getElementById("pop")
+ x.addEventListener("click", function() {
+     const y = document.getElementById("popup-letter")
+     y.style.display = 'block';
+     if(y.style.display ==='block') {
+         const z = document.getElementById("cancel")
+         z.addEventListener("click",function () {
+             document.getElementById("popup-letter").style.display = 'none';
+         })
+     } else {
+         y.style.display = 'block';
+     }
+ })
 
 
 
