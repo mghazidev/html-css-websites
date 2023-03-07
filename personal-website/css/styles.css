@@ -14,9 +14,14 @@ body {
     overflow-x: hidden;
   }
 
-  #error {
+  #emailError {
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
+  }
+
+  #passError {
+    color: #fff;
+    font-size: 10px;
   }
 
   .popup {

@@ -44,12 +44,12 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     if (!isvalidemail(email.value)) {
-        showError("Enter a valid email Address")
+        emailError("Enter a valid email Address")
         return;
     }
 
     if (!isvalidpass(password.value)) {
-        showError("Password must be 8 characters or longer")
+        passError("Password must be 8 characters or longer")
         return;
     }
 
@@ -65,9 +65,13 @@ function isvalidpass(password) {
     return password.length >= 8;
 }
 
-function showError(message) {
-    const errorElement = document.getElementById('error');
-    errorElement.innerHTML = message;
+function emailError(message) {
+    const email = document.getElementById('emailError');
+    email.innerHTML = message;
+}
+function passError(message) {
+    const pass = document.getElementById('passError');
+    pass.innerHTML = message;
 }
 
 

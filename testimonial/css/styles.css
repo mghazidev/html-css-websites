@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero h1 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50%;
+    display: flex;
+}
+
+.btn {
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background-color: rgb(66, 180, 157);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.active {
+    width: 45px;
+}
+
+
+.slide-rows {
+    display: flex;
+    width: 3200px;
+    transition: 0.5s ease;
+}
+
+.slider-col {
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.user-text {
+    background: rgb(66, 180, 157);
+    width: 400px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 45px;
+}
+
+.user-text p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.user-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.testimonial {
+    width: 100%;
+    overflow: hidden;
+}
