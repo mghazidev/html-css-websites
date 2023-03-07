@@ -21,9 +21,10 @@
             <div class="cross" id="cancel">&times;</div>
             <div class="popup-form">
                 <h3>WELCOME</h3>
-                <form action="send-email.php" method="post">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <input type="password" id="email" name="email" placeholder="Password" required>
+                <div class="error" id="error"></div>
+                <form id="form">
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="email" placeholder="Password" required>
                     <p>Forgot Password?</p>
                     <button class="btn" type="submit">Login In</button>
                     <span>Not a member?<i>Signup here</i></span>

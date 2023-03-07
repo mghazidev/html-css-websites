@@ -14,6 +14,11 @@ body {
     overflow-x: hidden;
   }
 
+  #error {
+    color: #fff;
+    font-size: 14px;
+  }
+
   .popup {
     width: 30%;
     margin: auto;
