@@ -19,7 +19,6 @@ $(document).ready(function() {
 
 
 
-
  const x = document.getElementById("pop")
  x.addEventListener("click", function() {
      const y = document.getElementById("popup-letter")
