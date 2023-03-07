@@ -1,5 +1,6 @@
 $(document).ready(function () {
-
+    const popupShown = localStorage.getItem("popupShown");
+    console.log("popupShown:", popupShown)
     function showletter() {
         $('#popup-letter').show();
     }
@@ -8,13 +9,17 @@ $(document).ready(function () {
         $('#popup-letter').hide();
     }
 
-    setTimeout(showletter, 3000);
+    if (!popupShown) {
+        setTimeout(showletter, 3000);
+      }
+
     const z = document.getElementById("cancel")
     z.addEventListener("click", function () {
         document.getElementById("popup-letter").style.display = 'none';
-    })
-
-})
+        
+        localStorage.setItem("popupShown", true);
+    });
+});
 
 const x = document.getElementById("pop")
 x.addEventListener("click", function () {
