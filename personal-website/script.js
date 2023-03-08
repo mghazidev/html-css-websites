@@ -11,12 +11,12 @@ $(document).ready(function () {
 
     if (!popupShown) {
         setTimeout(showletter, 3000);
-      }
+    }
 
     const z = document.getElementById("cancel")
     z.addEventListener("click", function () {
         document.getElementById("popup-letter").style.display = 'none';
-        
+
         localStorage.setItem("popupShown", true);
     });
 });
@@ -175,3 +175,14 @@ function myFunction5() {
     document.getElementById("div5").style.display = "block";
 }
 
+const a = document.querySelectorAll('.btn');
+const slider = document.getElementById('slider');
+
+a.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        slider.style.transform = `translateX(-${(index - 1) * 800}px)`;
+        a.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add("active")
+            
+        });
+    });
