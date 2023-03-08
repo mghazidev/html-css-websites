@@ -182,7 +182,6 @@ a.forEach((button, index) => {
     button.addEventListener("click", () => {
         slider.style.transform = `translateX(-${(index - 1) * 800}px)`;
         a.forEach((btn) => btn.classList.remove('active'));
-        button.classList.add("active")
-            
+        button.classList.add("active")   
         });
     });
