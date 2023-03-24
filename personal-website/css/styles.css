@@ -1206,7 +1206,7 @@ button[type="submit"]:hover {
   font-size: 40px;
   padding-top: 80px;
 }
-
+/* 
 .containe {
   width: 800px;
   height: 500px;
@@ -1286,7 +1286,7 @@ button[type="submit"]:hover {
 .testimonial {
   width: 100%;
   overflow: hidden;
-}
+} */
 
 
 
@@ -1302,37 +1302,4 @@ button[type="submit"]:hover {
 
 
   
-  /* section {
-    padding: 2em;
-    text-align: center;
-  }
-  
-  #slider {
-    background-color: #eee;
-    height: 300px;
-  }
-  
-  #qualifications {
-    background-color: #ddd;
-    height: 300px;
-  }
-  
-  #skills {
-    background-color: #ccc;
-    height: 300px;
-  }
-  
-  #portfolio {
-    background-color: #bbb;
-    height: 300px;
-  }
-  
-  #newsletter {
-    background-color: #aaa;
-    height: 300px;
-  }
-  
-  #contact {
-    background-color: #999;
-    height: 300px;
-  } */
+ 

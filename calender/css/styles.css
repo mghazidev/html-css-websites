@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #777;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+.calender {
+    
+    width: 800px;
+    color: white;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.container {
+    width: 100%;
+}
+
+.slide-rows {
+    width: 3200px;
+    display: flex;
+    height: 900px;
+}
+
+.single {
+    width: 800px;
+    height: 400px;
+    background-color: #333;
+}
+
+.head {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+.head li {
+    list-style-type: none;
+    font-size: 26px;
+}
+
+.prev {
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    transform: translateX(-50%);
+    bottom: -50%;
+    display: flex;
+}
+
+.next {
+    
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    transform: translateX(-50%);
+    bottom: -50%;
+    display: flex;
+}
+
+.months {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.months h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.months span {
+    font-size: 24px;
+}
+
+.weekdays {
+    width: 100%;
+}
+
+.weekdays ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.weekdays ul li {
+    list-style-type: none;
+    width: 13.6%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.days {
+    width: 100%;    
+}
+
+.days ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+.days ul li {
+    list-style-type: none;
+    width: 13.6%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.active {
+    background-color: greenyellow;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+.button {
+    display: flex;
+    z-index: 100;
+}
+
+.button li {
+    list-style-type: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+.btn-p,
+.btn-n {
+    font-size: 20px;
+}
