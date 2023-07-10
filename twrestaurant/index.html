@@ -18,6 +18,9 @@
         .rotate-5 {
             transform: rotate(-30deg);
         }
+        #toggle {
+          display: none;
+        }
     </style>
 <body>
   <!-- Header part -->
@@ -85,9 +88,10 @@
       <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 justify-center border-t border-black">
         <div class="p-2 sm:w-1/3 w-full border-r border-black">
           <div class="mr-20">
-            <div class="bg-black text-white mt-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+            <div class="bg-black text-white mb-14 mt-14 rounded flex p-2 items-center hover:rotate-6 justify-center" id="act1">
               <button class="title-font font-medium">shareables</button>
             </div>
+            <div class="hidden " id="1">
             <div class="flex flex-wrap my-5">
               <div class=" mx-auto w-full ">
                 <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
@@ -125,10 +129,12 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="mr-20">
-            <div class="bg-black text-white mb-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+            <div class="bg-black text-white mb-14 rounded flex p-2 items-center hover:rotate-6 justify-center" id="act2">
               <button class="title-font font-medium">baos</button>
             </div>
+            <div class="hidden " id="2">
             <div class="flex flex-wrap my-5">
               <div class=" mx-auto w-full ">
                 <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
@@ -154,10 +160,12 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="mr-20">
-            <div class="bg-black text-white rounded mb-14 flex p-2 items-center hover:rotate-6 justify-center">
+            <div class="bg-black text-white rounded mb-14 flex p-2 items-center hover:rotate-6 justify-center" id="act3">
               <button class="title-font font-medium">soups</button>
             </div>
+            <div class="hidden " id="3">
             <div class="flex flex-wrap my-5">
               <div class=" mx-auto w-full ">
                 <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
@@ -170,13 +178,15 @@
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
         <div class="p-2 sm:w-1/3 w-full">
           <div class="ml-20">
-            <div class="bg-black text-white  mt-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+            <div class="bg-black text-white mb-14 mt-14 rounded flex p-2 items-center hover:rotate-6 justify-center" id="act4">
               <button class="title-font font-medium">biang biang noodles</button>
             </div>
+            <div class="hidden " id="4">
             <div class="flex flex-wrap my-5">
               <div class=" mx-auto w-full ">
                 <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
@@ -214,10 +224,12 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="ml-20">
-            <div class="bg-black text-white mb-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+            <div class="bg-black text-white mb-14 rounded flex p-2 items-center hover:rotate-6 justify-center" id="act5">
               <button class="title-font font-medium">rice dishes</button>
             </div>
+            <div class="hidden " id="5">
             <div class="flex flex-wrap my-5">
               <div class=" mx-auto w-full ">
                 <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
@@ -242,11 +254,13 @@
                 </div>
               </div>
             </div>
+          </div>
           </div>
           <div class="ml-20">
-            <div class="bg-black text-white rounded mb-14 flex p-2 items-center hover:rotate-6 justify-center">
+            <div class="bg-black text-white rounded mb-14 flex p-2 items-center hover:rotate-6 justify-center" id="act6">
               <button class="title-font font-medium">dessert</button>
             </div>
+            <div class="hidden " id="6">
             <div class="flex flex-wrap my-5">
               <div class=" mx-auto w-full ">
                 <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
@@ -261,9 +275,44 @@
             </div>
           </div>
         </div>
-        </div>
-          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
       </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center">
+        <p class="ml-3 text-sm font-medium text-black mr-5">show allergens</p>
+        <label class="relative inline-flex items-center cursor-pointer" onclick="func1()">
+          <input type="checkbox" value="" id="checkbox" class="sr-only peer">
+            <div class="w-11 h-6 bg-black peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+        
+      </div>
+      <p class="ml-3 text-sm font-medium text-black mr-5 text-center my-5" id="toggle">1soybeans, 2gluten, 3egg, 4mollusc, 5milk</p>
+    </div>
   </section>
+  <!-- end of menu section -->
+
+  <!-- location section -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="flex flex-col items-center text-center lg:w-2/3 w-full">
+        <img class="lg:w-1/5 md:w-3/6 w-5/6 mb-10 object-cover object-center " src="images/MAMMA_LOVE.webp">
+        <h1 class="title-font sm:text-6xl text-3xl mb-4 font-medium text-black">visit mamma and the fam!</h1>  
+      </div>
+      <img class="lg:w-3/4 md:w-3/6 w-5/6 object-cover object-center rounded" src="images/MammaBao_CONTENT_202211_Anfahrt-001_v0-1-scaled.webp">
+      <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900"><span class="font-bold">MAMMA BAO | </span>Augustenstraße 31 | 80333, Munich</p>
+      <div class="flex flex-col bg-cover text-center bg-no-repeat py-5 px-5 text-black mx-auto w-1/5 h-full mb-14" style="background-image: url('images/MammaBao_CONTENT_Frame-001_large_bold_1920_SCREENtrans.png');">
+        <h1 class="title-font sm:text-xl text-3xl mb-4 font-medium text-black">opening hours</h1>  
+        <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900">Mo-Fr <span class="font-bold"> 11.30-15.00 & 17.30-22.00</span></p>
+        <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900">Sa-Su <span class="font-bold"> 11.30-15.00 & 17.30-22.00</span></p>
+        <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900">on public holidays <span class="font-bold"> 11.30-15.00 & 17.30-22.00</span></p>
+      </div>
+    </div>
+  </section>
+  <!-- end of location section -->
+
+  
+
+  <script src="/script.js">
+  </script>
 </body>
 </html>
+
