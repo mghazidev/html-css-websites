@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <title>Restaurant</title>
+    </head>
+    <style>
+        body {
+            font-family: 'Caprasimo', cursive;
+        }
+        .rotate-5 {
+            transform: rotate(-30deg);
+        }
+    </style>
+<body>
+  <!-- Header part -->
+  <header class="drop-shadow-lg bg-white body-font">
+    <div class="container mx-auto flex w-3/5 flex-wrap p-5flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="/images/MAMMA_EAT.jpg" class="w-20 h-20"></img>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-between">
+        <a class="mr-5 text-black ">order food online</a>
+        <a class="mr-5 text-black ">buy a gift card</a>
+        <a class="mr-5 text-black ">food & drinks</a>
+        <a class="mr-5 text-black ">visit mamma</a>
+        <button class="inline-flex items-center  bg-black border-0 py-2 px-3 focus:outline-none rounded text-white text-base mt-4 md:mt-0">no reservation, just come by and try out
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </button>
+      </nav>
+    </div>
+  </header>
+  <!-- end of header part -->
+  
+  <!-- Hero part -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-7xl text-3xl mb-4 text-black">MAMMA BAO</h1>
+        </div>
+            <video class="lg:w-3/4 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="/images/pexels-taryn-elliott-7172269 (1080p).mp4" controls autoplay></video>
+          <div class="text-center lg:w-2/3 w-full">
+              <h1 class="title-font sm:text-7xl text-3xl mb-4 text-black">not your average noodle shop.</h1>
+          </div>
+          <img class="lg:w-3/4 md:w-3/6 w-5/6 object-cover object-center rounded" src="/images/TOGETHER_LARGE-scaled-e1676308401444.jpg" controls autoplay></img>
+    </div>
+  </section>
+  <!-- end of hero part -->
+
+
+  <!-- about section -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="text-center lg:w-2/3 w-full">
+        <div class="flex flex-col w-fit justify-center items-center mx-auto">
+          <button class="inline-flex text-white bg-black border-0 mb-6 py-3 px-6 focus:outline-none text-lg">no reservation, just come by and try out</button>
+          <button class="inline-flex text-white bg-black border-0 mb-6 py-3 px-6 focus:outline-none text-lg">Want to order take-away?Just skip the queue and oredr inside</button>
+        </div>
+          <img class="lg:w-1/5 md:w-3/6 w-5/6 mb-10 mt-10 mx-auto object-cover object-center" alt="content" src="/images/MammaBao_CONTENT_202209_Umbao-001_v0-1.webp">
+          <h1 class="title-font sm:text-7xl text-3xl mb-4  text-black">what's mamma cooking?</h1>
+          <p class="w-full mt-10 leading-relaxed"><img class="w-12 inline-flex rotate-5 mr-2" src="images/HEART_WEB.webp">Please be patient during peak times, every portion of noodles is freshly made with love.</p>
+          <p class="w-full mt-10 leading-relaxed">check the icons, to see, if a dish is</p>
+          <p class="w-full mt-5 leading-relaxed">vegeterian<img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></p>
+          <p class="w-full mt-2 leading-relaxed">or vegan<img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></p>
+          <p class="w-full mt-5 leading-relaxed"><img class="w-10 inline-flex mr-5" src="images/HALAL_WEB.webp">our meat is halal</p> 
+          <button class="inline-flex text-white bg-black border-0 mt-6 py-5 px-6 focus:outline-none text-lg hover:rotate-6">last order 30 min before closing</button>
+        </div>
+    </div>
+  </section>
+  <!-- end of about section -->
+
+  <!-- Menu section -->
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 w-3/5 py-24 mx-auto ">
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 justify-center border-t border-black">
+        <div class="p-2 sm:w-1/3 w-full border-r border-black">
+          <div class="mr-20">
+            <div class="bg-black text-white mt-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+              <button class="title-font font-medium">shareables</button>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mr-20">
+            <div class="bg-black text-white mb-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+              <button class="title-font font-medium">baos</button>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mr-20">
+            <div class="bg-black text-white rounded mb-14 flex p-2 items-center hover:rotate-6 justify-center">
+              <button class="title-font font-medium">soups</button>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/3 w-full">
+          <div class="ml-20">
+            <div class="bg-black text-white  mt-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+              <button class="title-font font-medium">biang biang noodles</button>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-20">
+            <div class="bg-black text-white mb-14 rounded flex p-2 items-center hover:rotate-6 justify-center">
+              <button class="title-font font-medium">rice dishes</button>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-20">
+            <div class="bg-black text-white rounded mb-14 flex p-2 items-center hover:rotate-6 justify-center">
+              <button class="title-font font-medium">dessert</button>
+            </div>
+            <div class="flex flex-wrap my-5">
+              <div class=" mx-auto w-full ">
+                <div class="h-full flex sm:flex-row  flex-col border-b border-black items-center sm:justify-start justify-center text-center sm:text-left">
+                   <div class="flex-grow text-center ">
+                      <h2 class="title-font font-medium text-lg text-gray-900">MU-ERR SALAD 1 <img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"><img class="w-6 inline-flex" src="images/VEGETARIAN_WEB.png"></h2>
+                      <p class="">爽口木耳</p>
+                      <p class="">black fungus| chili | cilantro</p>
+                      <p class="mb-4">6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+      </div>
+  </section>
+</body>
+</html>
