@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://kit.fontawesome.com/4b7aa54d95.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <title>Restaurant</title>
+    </head>
+    <style>
+        body {
+            font-family: 'Caprasimo', cursive;
+        }
+        .rotate-5 {
+            transform: rotate(-30deg);
+        }
+        #toggle {
+          display: none;
+        }
+    </style>
+<body>
+  <!-- Header part -->
+  <header class="drop-shadow-lg bg-white body-font">
+    <div class="container mx-auto flex w-3/5 flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+        <a href="http://127.0.0.1:5500/index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
+        <img src="/images/MAMMA_EAT.jpg" class="w-20 h-20"></img>
+      </a>
+      <div class="">
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-between">
+        <a href="https://mylightspeed.app/OZIXMLNE/C-ordering/menu" class="mr-5 text-black cursor-pointer">order food online</a>
+        <a href="https://mylightspeed.app/giftcard/c5760adb-c15a-45fb-9243-3cc9b3904d54/menu" class="mr-5 text-black cursor-pointer">buy a gift card</a>
+        <a href="http://127.0.0.1:5500/menu.html" class="mr-5 text-black cursor-pointer">food & drinks</a>
+        <a href="http://127.0.0.1:5500/location.html" class="mr-5 text-black cursor-pointer">visit mamma</a>
+        <button class="inline-flex items-center  bg-black border-0 py-2 px-3 focus:outline-none rounded text-white text-base mt-4 md:mt-0">no reservation, just come by and try out
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </button>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <!-- end of header part -->
+
+
+  <!-- location section -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="flex flex-col items-center text-center lg:w-2/3 w-full">
+        <img class="lg:w-1/5 md:w-3/6 w-5/6 mb-10 object-cover object-center " src="images/MAMMA_LOVE.webp">
+        <h1 class="title-font sm:text-6xl text-3xl mb-4 font-medium text-black">visit mamma and the fam!</h1>  
+      </div>
+      <img class="lg:w-3/4 md:w-3/6 w-5/6 object-cover object-center rounded" src="images/MammaBao_CONTENT_202211_Anfahrt-001_v0-1-scaled.webp">
+      <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900"><span class="font-bold">MAMMA BAO | </span>Augustenstraße 31 | 80333, Munich</p>
+      <div class="flex flex-col bg-cover text-center bg-no-repeat py-5 px-5 text-black mx-auto w-1/5 h-full mb-14" style="background-image: url('images/MammaBao_CONTENT_Frame-001_large_bold_1920_SCREENtrans.png');">
+        <h1 class="title-font sm:text-xl text-3xl mb-4 font-medium text-black">opening hours</h1>  
+        <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900">Mo-Fr <span class="font-bold"> 11.30-15.00 & 17.30-22.00</span></p>
+        <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900">Sa-Su <span class="font-bold"> 11.30-15.00 & 17.30-22.00</span></p>
+        <p class="title-font sm:text-sl text-sl mb-4 font-medium text-gray-900">on public holidays <span class="font-bold"> 11.30-15.00 & 17.30-22.00</span></p>
+      </div>
+    </div>
+  </section>
+  <!-- end of location section -->
+  
+
+  <!-- Footer section -->
+  <footer class="text-white body-font">
+    <div class="container mx-auto justify-evenly flex-wrap px-28 py-8 mx-auto flex items-baseline bg-no-repeat sm:flex-row flex-col" style="background-image: url(images/black.png);">
+      <a class="flex flex-col title-font font-medium items-center md:justify-start  justify-center text-gray-900">
+        <img src="images/MAMMA_EAT.jpg" class="w-28 h-28 text-white p-2 bg-white rounded-full"></img>
+        <span class="ml-3 text-xl text-white">© MAMMA BAO</span>
+      </a>
+      <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">Impressum | Datenschutz</p>
+      <div class="flex flex-wrap flex-col">
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-white">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12 bg-white text-black rounded" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12 bg-white text-black rounded" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+          <p class="text-sm text-white text-center sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">visit mamma on social media!</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/script.js">
+  </script>
+</body>
+</html>
+
